@@ -1,0 +1,48 @@
+---
+
+device.hardware_data:
+  section-type: "manifest_content"
+  belong_to: set.device.MKE17Z9
+  contents:
+    generated_from_chip_model: "yes"
+    devices:
+      - id: "MKE17Z512xxx9"
+        full_name: "MKE17Z512xxx9"
+        name: "MKE17Z9"
+        platform: "Kinetis"
+        series: "E"
+        family: "KE1x"
+        subfamily: "KE17"
+        frequency_mhz: 96
+        core:
+          - name: "Cortex-M0P"
+            type: "cm0p"
+            id: "cm0plus"
+            description: "M0P core"
+            fpu: "NO_FPU"
+            mpu: false
+        memory:
+          memoryBlock:
+            - id: "PROGRAM_FLASH"
+              name: "PROGRAM_FLASH"
+              addr: 0x0
+              size: 0x80000
+              type: "Flash"
+              access: "RO"
+              default: true
+              startup: true
+            - id: "SRAM"
+              name: "SRAM"
+              addr: 0x1fff8000
+              size: 0x18000
+              type: "RAM"
+              access: "RW"
+              default: true
+        total_memory:
+          ram_size_kb: 96
+          flash_size_kb: 512
+        part:
+          - name: "MKE17Z512VLL9"
+          - name: "MKE17Z512VLH9"
+        modules:
+...

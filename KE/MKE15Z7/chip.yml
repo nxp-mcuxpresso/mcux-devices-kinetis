@@ -1,0 +1,115 @@
+---
+
+device.hardware_data:
+  section-type: "manifest_content"
+  belong_to: set.device.MKE15Z7
+  contents:
+    generated_from_chip_model: "yes"
+    devices:
+      - id: "MKE15Z256xxx7"
+        full_name: "MKE15Z256xxx7"
+        name: "MKE15Z7"
+        platform: "Kinetis"
+        series: "E"
+        family: "KE1x"
+        subfamily: "KE15"
+        frequency_mhz: 72
+        core:
+          - name: "Cortex-M0P"
+            type: "cm0p"
+            id: "core0"
+            description: "M0P core"
+            fpu: "NO_FPU"
+            mpu: false
+        memory:
+          memoryBlock:
+            - id: "PROGRAM_FLASH"
+              name: "PROGRAM_FLASH"
+              addr: 0x0
+              size: 0x40000
+              type: "Flash"
+              access: "RO"
+              default: true
+              startup: true
+            - id: "SRAM"
+              name: "SRAM"
+              addr: 0x1fffe000
+              size: 0x8000
+              type: "RAM"
+              access: "RW"
+              default: true
+            - id: "FLEX_RAM"
+              name: "FLEX_RAM"
+              addr: 0x14000000
+              size: 0x800
+              type: "RAM"
+              access: "RW"
+              default: true
+            - id: "FLEX_NVM"
+              name: "FLEX_NVM"
+              addr: 0x10000000
+              size: 0x8000
+              type: "DFlash"
+              access: "RO"
+              default: true
+        total_memory:
+          ram_size_kb: 32
+          flash_size_kb: 256
+        part:
+          - name: "MKE15Z256VLL7"
+          - name: "MKE15Z256VLH7"
+        modules:
+      - id: "MKE15Z128xxx7"
+        full_name: "MKE15Z128xxx7"
+        name: "MKE15Z7"
+        platform: "Kinetis"
+        series: "E"
+        family: "KE1x"
+        subfamily: "KE15"
+        frequency_mhz: 72
+        core:
+          - name: "Cortex-M0P"
+            type: "cm0p"
+            id: "core0"
+            description: "M0P core"
+            fpu: "NO_FPU"
+            mpu: false
+        memory:
+          memoryBlock:
+            - id: "PROGRAM_FLASH"
+              name: "PROGRAM_FLASH"
+              addr: 0x0
+              size: 0x20000
+              type: "Flash"
+              access: "RO"
+              default: true
+              startup: true
+            - id: "SRAM"
+              name: "SRAM"
+              addr: 0x1ffff000
+              size: 0x4000
+              type: "RAM"
+              access: "RW"
+              default: true
+            - id: "FLEX_RAM"
+              name: "FLEX_RAM"
+              addr: 0x14000000
+              size: 0x800
+              type: "RAM"
+              access: "RW"
+              default: true
+            - id: "FLEX_NVM"
+              name: "FLEX_NVM"
+              addr: 0x10000000
+              size: 0x8000
+              type: "DFlash"
+              access: "RO"
+              default: true
+        total_memory:
+          ram_size_kb: 16
+          flash_size_kb: 128
+        part:
+          - name: "MKE15Z128VLL7"
+          - name: "MKE15Z128VLH7"
+        modules:
+...

@@ -1,0 +1,58 @@
+---
+
+device.hardware_data:
+  section-type: "manifest_content"
+  belong_to: set.device.K32L2A31A
+  contents:
+    generated_from_chip_model: "yes"
+    devices:
+      - id: "K32L2A31xxxxA"
+        full_name: "K32L2A31xxxxA"
+        name: "K32L2A31A"
+        platform: "Kinetis"
+        series: "K32L"
+        family: "K32L2A41A"
+        subfamily: "K32L2A31A"
+        frequency_mhz: 72
+        core:
+          - name: "Cortex-M0P"
+            type: "cm0p"
+            id: "core0"
+            description: "M0P core"
+            fpu: "NO_FPU"
+            mpu: true
+        memory:
+          memoryBlock:
+            - id: "PROGRAM_FLASH"
+              name: "PROGRAM_FLASH"
+              addr: 0x0
+              size: 0x40000
+              type: "Flash"
+              access: "RO"
+              default: true
+              startup: true
+            - id: "SRAM"
+              name: "SRAM"
+              addr: 0x1fff8000
+              size: 0x20000
+              type: "RAM"
+              access: "RW"
+              default: true
+            - id: "USB_RAM"
+              name: "USB_RAM"
+              addr: 0x40100000
+              size: 0x800
+              type: "RAM"
+              access: "RW"
+              default: true
+        total_memory:
+          ram_size_kb: 128
+          flash_size_kb: 256
+        part:
+          - name: "K32L2A31VLL1A"
+          - name: "K32L2A31VLH1A"
+        modules:
+          - name: "USB"
+            feature: "KHCI_COUNT"
+            value: "1"
+...

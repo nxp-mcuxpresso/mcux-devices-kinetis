@@ -1,0 +1,6 @@
+/*!
+@defgroup port PORT Driver
+@details This driver configures the PORT, including function mux, filter, pull
+up or down, and so on.
+
+*/

@@ -1,0 +1,133 @@
+---
+
+device.hardware_data:
+  section-type: "manifest_content"
+  belong_to: set.device.MKE02Z4
+  contents:
+    generated_from_chip_model: "yes"
+    devices:
+      - id: "MKE02Z16xxx4"
+        full_name: "MKE02Z16xxx4"
+        name: "MKE02Z4"
+        platform: "Kinetis"
+        series: "E"
+        family: "KE0x"
+        subfamily: "KE02Z"
+        frequency_mhz: 40
+        core:
+          - name: "Cortex-M0P"
+            type: "cm0p"
+            id: "core0"
+            description: "M0P core"
+            fpu: "NO_FPU"
+            mpu: false
+        memory:
+          memoryBlock:
+            - id: "PROGRAM_FLASH"
+              name: "PROGRAM_FLASH"
+              addr: 0x0
+              size: 0x4000
+              type: "Flash"
+              access: "RO"
+              default: true
+              startup: true
+            - id: "SRAM"
+              name: "SRAM"
+              addr: 0x1ffffe00
+              size: 0x800
+              type: "RAM"
+              access: "RW"
+              default: true
+        total_memory:
+          ram_size_kb: 2
+          flash_size_kb: 16
+        part:
+          - name: "MKE02Z16VFM4"
+          - name: "MKE02Z16VLC4"
+          - name: "MKE02Z16VLD4"
+        modules:
+      - id: "MKE02Z32xxx4"
+        full_name: "MKE02Z32xxx4"
+        name: "MKE02Z4"
+        platform: "Kinetis"
+        series: "E"
+        family: "KE0x"
+        subfamily: "KE02Z"
+        frequency_mhz: 40
+        core:
+          - name: "Cortex-M0P"
+            type: "cm0p"
+            id: "core0"
+            description: "M0P core"
+            fpu: "NO_FPU"
+            mpu: false
+        memory:
+          memoryBlock:
+            - id: "PROGRAM_FLASH"
+              name: "PROGRAM_FLASH"
+              addr: 0x0
+              size: 0x8000
+              type: "Flash"
+              access: "RO"
+              default: true
+              startup: true
+            - id: "SRAM"
+              name: "SRAM"
+              addr: 0x1ffffc00
+              size: 0x1000
+              type: "RAM"
+              access: "RW"
+              default: true
+        total_memory:
+          ram_size_kb: 4
+          flash_size_kb: 32
+        part:
+          - name: "MKE02Z32VFM4"
+          - name: "MKE02Z32VLC4"
+          - name: "MKE02Z32VLD4"
+          - name: "MKE02Z32VLH4"
+          - name: "MKE02Z32VQH4"
+        modules:
+      - id: "MKE02Z64xxx4"
+        full_name: "MKE02Z64xxx4"
+        name: "MKE02Z4"
+        platform: "Kinetis"
+        series: "E"
+        family: "KE0x"
+        subfamily: "KE02Z"
+        frequency_mhz: 40
+        core:
+          - name: "Cortex-M0P"
+            type: "cm0p"
+            id: "core0"
+            description: "M0P core"
+            fpu: "NO_FPU"
+            mpu: false
+        memory:
+          memoryBlock:
+            - id: "PROGRAM_FLASH"
+              name: "PROGRAM_FLASH"
+              addr: 0x0
+              size: 0x10000
+              type: "Flash"
+              access: "RO"
+              default: true
+              startup: true
+            - id: "SRAM"
+              name: "SRAM"
+              addr: 0x1ffffc00
+              size: 0x1000
+              type: "RAM"
+              access: "RW"
+              default: true
+        total_memory:
+          ram_size_kb: 4
+          flash_size_kb: 64
+        part:
+          - name: "MKE02Z64VFM4"
+          - name: "MKE02Z64VLC4"
+          - name: "MKE02Z64VLD4"
+          - name: "MKE02Z64VLH4"
+          - name: "MKE02Z64VQH4"
+        modules:
+...

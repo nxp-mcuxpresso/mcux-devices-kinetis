@@ -1,0 +1,96 @@
+---
+
+device.hardware_data:
+  section-type: "manifest_content"
+  belong_to: set.device.K32L3A60
+  contents:
+    generated_from_chip_model: "yes"
+    devices:
+      - id: "K32L3A60xxx"
+        full_name: "K32L3A60xxx"
+        name: "K32L3A60"
+        platform: "Kinetis"
+        series: "K32L"
+        family: "K32L3A60"
+        subfamily: "K32L3A60"
+        frequency_mhz: 72
+        core:
+          - name: "Cortex-M0P"
+            type: "cm0p"
+            id: "cm0plus"
+            description: ""
+            fpu: "NO_FPU"
+            mpu: true
+            boot_role: "primary_secondary"
+            slave_role:
+              - id: "M0SLAVE"
+                name: "Cortex-M0 acts as slave by default"
+          - name: "Cortex-M4F"
+            type: "cm4f"
+            id: "cm4"
+            description: ""
+            fpu: "SP_FPU"
+            mpu: true
+            boot_role: "primary"
+        memory:
+          memoryBlock:
+            - id: "PROGRAM_FLASH_cm4"
+              name: "PROGRAM_FLASH_cm4"
+              addr: 0x0
+              size: 0x100000
+              type: "Flash"
+              access: "RO"
+              default: true
+              startup: true
+            - id: "PROGRAM_FLASH_cm0plus"
+              name: "PROGRAM_FLASH_cm0plus"
+              addr: 0x1000000
+              size: 0x40000
+              type: "Flash"
+              access: "RO"
+              default: true
+            - id: "SRAM_DTC_cm4"
+              name: "SRAM_DTC_cm4"
+              addr: 0x20000000
+              size: 0x30000
+              type: "RAM"
+              access: "RW"
+              default: true
+            - id: "SRAM_TCM_cm0plus"
+              name: "SRAM_TCM_cm0plus"
+              addr: 0x9000000
+              size: 0x20000
+              type: "RAM"
+              access: "RW"
+              default: true
+            - id: "SRAM_ITC_cm4"
+              name: "SRAM_ITC_cm4"
+              addr: 0x8000000
+              size: 0x10000
+              type: "RAM"
+              access: "RW"
+              default: true
+            - id: "FLEX_RAM"
+              name: "FLEX_RAM"
+              addr: 0x48000000
+              size: 0x1000
+              type: "RAM"
+              access: "RW"
+              default: true
+            - id: "USB_RAM"
+              name: "USB_RAM"
+              addr: 0x48010000
+              size: 0x800
+              type: "RAM"
+              access: "RW"
+              default: true
+        total_memory:
+          ram_size_kb: 384
+          flash_size_kb: 1280
+        part:
+          - name: "K32L3A60VPJ1A"
+        modules:
+          - name: "USB"
+            feature: "KHCI_COUNT"
+            value: "1"
+...
