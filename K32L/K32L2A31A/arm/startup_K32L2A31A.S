@@ -4,13 +4,11 @@
 /*            K32L2A31A                                                      */
 /*  @version: 1.0                                                            */
 /*  @date:    2019-10-30                                                     */
-/*  @build:   b210419                                                        */
+/*  @build:   b240709                                                        */
 /* ------------------------------------------------------------------------- */
 /*                                                                           */
 /* Copyright 1997-2016 Freescale Semiconductor, Inc.                         */
-/* Copyright 2016-2021 NXP                                                   */
-/* All rights reserved.                                                      */
-/*                                                                           */
+/* Copyright 2016-2024 NXP                                                   */
 /* SPDX-License-Identifier: BSD-3-Clause                                     */
 /*****************************************************************************/
 /* Version: GCC for ARM Embedded Processors                                  */
@@ -132,11 +130,11 @@ Reset_Handler:
     str     r1, [r0]
     ldr     r2, [r1]
     msr     msp, r2
-    ldr   r0,=SystemInit
-    blx   r0
+    ldr     r0,=SystemInit
+    blx     r0
     cpsie   i               /* Unmask interrupts */
-    ldr   r0,=__main
-    bx    r0
+    ldr     r0,=__main
+    bx      r0
 
     .pool
     .size Reset_Handler, . - Reset_Handler

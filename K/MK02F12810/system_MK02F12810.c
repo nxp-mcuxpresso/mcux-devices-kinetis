@@ -15,7 +15,7 @@
 **
 **     Reference manual:    K02P64M100SFARM, Rev. 0, February 14, 2014
 **     Version:             rev. 0.5, 2015-02-19
-**     Build:               b181105
+**     Build:               b240710
 **
 **     Abstract:
 **         Provides a system configuration function and a global variable that
@@ -23,9 +23,7 @@
 **         the oscillator (PLL) that is part of the microcontroller device.
 **
 **     Copyright 2016 Freescale Semiconductor, Inc.
-**     Copyright 2016-2018 NXP
-**     All rights reserved.
-**
+**     Copyright 2016-2024 NXP
 **     SPDX-License-Identifier: BSD-3-Clause
 **
 **     http:                 www.nxp.com

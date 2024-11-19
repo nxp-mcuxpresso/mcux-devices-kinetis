@@ -8,15 +8,13 @@
 **     Compiler:            Keil ARM C/C++ Compiler
 **     Reference manual:    KE1xZP100M72SF1RM, Rev. 1, Jun. 2021
 **     Version:             rev. 2.0, 2021-10-08
-**     Build:               b211108
+**     Build:               b241119
 **
 **     Abstract:
 **         Linker file for the Keil ARM C/C++ Compiler
 **
 **     Copyright 2016 Freescale Semiconductor, Inc.
-**     Copyright 2016-2021 NXP
-**     All rights reserved.
-**
+**     Copyright 2016-2024 NXP
 **     SPDX-License-Identifier: BSD-3-Clause
 **
 **     http:                 www.nxp.com

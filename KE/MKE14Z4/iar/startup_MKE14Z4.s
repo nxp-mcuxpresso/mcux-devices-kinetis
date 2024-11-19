@@ -4,13 +4,11 @@
 ;            MKE14Z4
 ;  @version: 3.0
 ;  @date:    2020-1-22
-;  @build:   b200320
+;  @build:   b240712
 ; -------------------------------------------------------------------------
 ;
 ; Copyright 1997-2016 Freescale Semiconductor, Inc.
-; Copyright 2016-2020 NXP
-; All rights reserved.
-;
+; Copyright 2016-2024 NXP
 ; SPDX-License-Identifier: BSD-3-Clause
 ;
 ; The modules in this file are included in the libraries, and may be replaced

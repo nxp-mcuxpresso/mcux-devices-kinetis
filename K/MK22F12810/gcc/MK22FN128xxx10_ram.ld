@@ -8,15 +8,13 @@
 **     Compiler:            GNU C Compiler
 **     Reference manual:    K22P121M100SF9RM, Rev. 1, April 25, 2014
 **     Version:             rev. 1.6, 2015-02-19
-**     Build:               b210812
+**     Build:               b241115
 **
 **     Abstract:
 **         Linker file for the GNU C Compiler
 **
 **     Copyright 2016 Freescale Semiconductor, Inc.
-**     Copyright 2016-2021 NXP
-**     All rights reserved.
-**
+**     Copyright 2016-2024 NXP
 **     SPDX-License-Identifier: BSD-3-Clause
 **
 **     http:                 www.nxp.com

@@ -6,15 +6,13 @@
 **     Compiler:            GNU C Compiler
 **     Reference manual:    K32L2AxRM, Rev. 1, 12/2019
 **     Version:             rev. 1.0, 2019-10-30
-**     Build:               b210812
+**     Build:               b241115
 **
 **     Abstract:
 **         Linker file for the GNU C Compiler
 **
 **     Copyright 2016 Freescale Semiconductor, Inc.
-**     Copyright 2016-2021 NXP
-**     All rights reserved.
-**
+**     Copyright 2016-2024 NXP
 **     SPDX-License-Identifier: BSD-3-Clause
 **
 **     http:                 www.nxp.com

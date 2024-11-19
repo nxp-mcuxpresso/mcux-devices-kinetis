@@ -4,13 +4,11 @@
 ;            MK22F51212
 ;  @version: 2.9
 ;  @date:    2016-3-21
-;  @build:   b200319
+;  @build:   b240709
 ; -------------------------------------------------------------------------
 ;
 ; Copyright 1997-2016 Freescale Semiconductor, Inc.
-; Copyright 2016-2020 NXP
-; All rights reserved.
-;
+; Copyright 2016-2024 NXP
 ; SPDX-License-Identifier: BSD-3-Clause
 ;
 ; The modules in this file are included in the libraries, and may be replaced

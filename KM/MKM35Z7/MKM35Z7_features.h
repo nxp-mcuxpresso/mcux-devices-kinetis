@@ -1,15 +1,13 @@
 /*
 ** ###################################################################
 **     Version:             rev. 1.0, 2019-08-01
-**     Build:               b201028
+**     Build:               b240417
 **
 **     Abstract:
 **         Chip specific module features.
 **
 **     Copyright 2016 Freescale Semiconductor, Inc.
-**     Copyright 2016-2020 NXP
-**     All rights reserved.
-**
+**     Copyright 2016-2024 NXP
 **     SPDX-License-Identifier: BSD-3-Clause
 **
 **     http:                 www.nxp.com
@@ -1311,6 +1309,8 @@
 #define FSL_FEATURE_PIT_HAS_SHARED_IRQ_HANDLER (1)
 /* @brief Has timer enable control. */
 #define FSL_FEATURE_PIT_HAS_MDIS (1)
+/* @brief Has ERRATA 7914. */
+#define FSL_FEATURE_PIT_HAS_ERRATA_7914 (0)
 
 /* PMC module features */
 

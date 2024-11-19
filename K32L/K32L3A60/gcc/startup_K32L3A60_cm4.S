@@ -4,11 +4,11 @@
 /*            K32L3A60_cm4                                                   */
 /*  @version: 1.0                                                            */
 /*  @date:    2019-4-22                                                      */
-/*  @build:   b231018                                                        */
+/*  @build:   b240709                                                        */
 /* ------------------------------------------------------------------------- */
 /*                                                                           */
 /* Copyright 1997-2016 Freescale Semiconductor, Inc.                         */
-/* Copyright 2016-2023 NXP                                                   */
+/* Copyright 2016-2024 NXP                                                   */
 /* SPDX-License-Identifier: BSD-3-Clause                                     */
 /*****************************************************************************/
 /* Version: GCC for ARM Embedded Processors                                  */

@@ -6,15 +6,13 @@
 **     Compiler:            GNU C Compiler
 **     Reference manual:    MKMxxZxxACxx5RM, Rev. 2, 10/2017
 **     Version:             rev. 1.0, 2014-07-22
-**     Build:               b210812
+**     Build:               b241119
 **
 **     Abstract:
 **         Linker file for the GNU C Compiler
 **
 **     Copyright 2016 Freescale Semiconductor, Inc.
-**     Copyright 2016-2021 NXP
-**     All rights reserved.
-**
+**     Copyright 2016-2024 NXP
 **     SPDX-License-Identifier: BSD-3-Clause
 **
 **     http:                 www.nxp.com

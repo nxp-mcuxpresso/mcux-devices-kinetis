@@ -4,13 +4,11 @@
 ;            MKM34Z7
 ;  @version: 1.2
 ;  @date:    2015-3-6
-;  @build:   b201125
+;  @build:   b240710
 ; -------------------------------------------------------------------------
 ;
 ; Copyright 1997-2016 Freescale Semiconductor, Inc.
-; Copyright 2016-2020 NXP
-; All rights reserved.
-;
+; Copyright 2016-2024 NXP
 ; SPDX-License-Identifier: BSD-3-Clause
 ;
 ; The modules in this file are included in the libraries, and may be replaced

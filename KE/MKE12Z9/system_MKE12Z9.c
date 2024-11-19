@@ -11,7 +11,7 @@
 **
 **     Reference manual:    KE1xZP100M96SF0RM, Rev. 1, Sep. 2023
 **     Version:             rev. 2.0, 2023-10-08
-**     Build:               b231008
+**     Build:               b240715
 **
 **     Abstract:
 **         Provides a system configuration function and a global variable that
@@ -19,7 +19,7 @@
 **         the oscillator (PLL) that is part of the microcontroller device.
 **
 **     Copyright 2016 Freescale Semiconductor, Inc.
-**     Copyright 2016-2023 NXP
+**     Copyright 2016-2024 NXP
 **     SPDX-License-Identifier: BSD-3-Clause
 **
 **     http:                 www.nxp.com
