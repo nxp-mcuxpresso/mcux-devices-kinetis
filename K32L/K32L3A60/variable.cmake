@@ -14,6 +14,6 @@ if (NOT DEFINED core_id)
     message(FATAL_ERROR "Please specify core_id for multicore device.")
 endif()
 
-include(${SdkRootDirPath}/devices/Kinetis/K32L/K32L3A60/${core_id}/variable.cmake)
+include(${SdkRootDirPath}/${device_root}/Kinetis/K32L/K32L3A60/${core_id}/variable.cmake)
 
 #### Source record
