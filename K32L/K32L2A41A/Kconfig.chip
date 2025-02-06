@@ -55,10 +55,10 @@ config MCUX_HW_DEVICE_ID_K32L2A41xxxxA
 choice MCUX_HW_DEVICE_PART_K32L2A41A
     prompt "Device K32L2A41A Part"
     config MCUX_HW_DEVICE_PART_K32L2A41VLL1A
-    bool "Device part K32L2A41VLL1A"
+    bool "K32L2A41VLL1A"
     select MCUX_HW_DEVICE_ID_K32L2A41xxxxA
     config MCUX_HW_DEVICE_PART_K32L2A41VLH1A
-    bool "Device part K32L2A41VLH1A"
+    bool "K32L2A41VLH1A"
     select MCUX_HW_DEVICE_ID_K32L2A41xxxxA
 endchoice
 

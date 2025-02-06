@@ -55,10 +55,10 @@ config MCUX_HW_DEVICE_ID_MKM34Z256xxx7
 choice MCUX_HW_DEVICE_PART_MKM34Z7
     prompt "Device MKM34Z7 Part"
     config MCUX_HW_DEVICE_PART_MKM34Z256VLQ7
-    bool "Device part MKM34Z256VLQ7"
+    bool "MKM34Z256VLQ7"
     select MCUX_HW_DEVICE_ID_MKM34Z256xxx7
     config MCUX_HW_DEVICE_PART_MKM34Z256VLL7
-    bool "Device part MKM34Z256VLL7"
+    bool "MKM34Z256VLL7"
     select MCUX_HW_DEVICE_ID_MKM34Z256xxx7
 endchoice
 

@@ -58,22 +58,22 @@ config MCUX_HW_DEVICE_ID_MKE15Z32xxx4
 choice MCUX_HW_DEVICE_PART_MKE15Z4
     prompt "Device MKE15Z4 Part"
     config MCUX_HW_DEVICE_PART_MKE15Z64VLF4
-    bool "Device part MKE15Z64VLF4"
+    bool "MKE15Z64VLF4"
     select MCUX_HW_DEVICE_ID_MKE15Z64xxx4
     config MCUX_HW_DEVICE_PART_MKE15Z64VLD4
-    bool "Device part MKE15Z64VLD4"
+    bool "MKE15Z64VLD4"
     select MCUX_HW_DEVICE_ID_MKE15Z64xxx4
     config MCUX_HW_DEVICE_PART_MKE15Z64VFP4
-    bool "Device part MKE15Z64VFP4"
+    bool "MKE15Z64VFP4"
     select MCUX_HW_DEVICE_ID_MKE15Z64xxx4
     config MCUX_HW_DEVICE_PART_MKE15Z32VLF4
-    bool "Device part MKE15Z32VLF4"
+    bool "MKE15Z32VLF4"
     select MCUX_HW_DEVICE_ID_MKE15Z32xxx4
     config MCUX_HW_DEVICE_PART_MKE15Z32VLD4
-    bool "Device part MKE15Z32VLD4"
+    bool "MKE15Z32VLD4"
     select MCUX_HW_DEVICE_ID_MKE15Z32xxx4
     config MCUX_HW_DEVICE_PART_MKE15Z32VFP4
-    bool "Device part MKE15Z32VFP4"
+    bool "MKE15Z32VFP4"
     select MCUX_HW_DEVICE_ID_MKE15Z32xxx4
 endchoice
 

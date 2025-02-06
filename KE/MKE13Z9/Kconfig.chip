@@ -55,10 +55,10 @@ config MCUX_HW_DEVICE_ID_MKE13Z512xxx9
 choice MCUX_HW_DEVICE_PART_MKE13Z9
     prompt "Device MKE13Z9 Part"
     config MCUX_HW_DEVICE_PART_MKE13Z512VLL9
-    bool "Device part MKE13Z512VLL9"
+    bool "MKE13Z512VLL9"
     select MCUX_HW_DEVICE_ID_MKE13Z512xxx9
     config MCUX_HW_DEVICE_PART_MKE13Z512VLH9
-    bool "Device part MKE13Z512VLH9"
+    bool "MKE13Z512VLH9"
     select MCUX_HW_DEVICE_ID_MKE13Z512xxx9
 endchoice
 
