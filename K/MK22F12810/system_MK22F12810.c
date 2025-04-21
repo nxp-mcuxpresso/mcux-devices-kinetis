@@ -103,7 +103,7 @@ void SystemInit (void) {
 
 void SystemCoreClockUpdate (void) {
 
-  uint32_t MCGOUTClock;                                                        /* Variable to store output clock frequency of the MCG module */
+  uint32_t MCGOUTClock;                /* Variable to store output clock frequency of the MCG module */
   uint16_t Divider;
   uint8_t tmpC7 = 0;
 
@@ -136,14 +136,14 @@ void SystemCoreClockUpdate (void) {
           Divider = (uint16_t)(32LU << ((MCG->C1 & MCG_C1_FRDIV_MASK) >> MCG_C1_FRDIV_SHIFT));
           break;
         }
-      } else {/* ((MCG->C2 & MCG_C2_RANGE_MASK) != 0x00U) */
+      } else {
         Divider = (uint16_t)(1LU << ((MCG->C1 & MCG_C1_FRDIV_MASK) >> MCG_C1_FRDIV_SHIFT));
       }
       MCGOUTClock = (MCGOUTClock / Divider); /* Calculate the divided FLL reference clock */
-    } else { /* (!((MCG->C1 & MCG_C1_IREFS_MASK) == 0x00U)) */
+    } else {
       MCGOUTClock = CPU_INT_SLOW_CLK_HZ; /* The slow internal reference clock is selected */
-    } /* (!((MCG->C1 & MCG_C1_IREFS_MASK) == 0x00U)) */
-    /* Select correct multiplier to calculate the MCG output clock  */
+    }
+    /* Select correct multiplier to calculate the MCG output clock */
     switch (MCG->C4 & (MCG_C4_DMX32_MASK | MCG_C4_DRST_DRS_MASK)) {
       case 0x00U:
         MCGOUTClock *= 640U;
@@ -177,10 +177,10 @@ void SystemCoreClockUpdate (void) {
     /* Internal reference clock is selected */
     if ((MCG->C2 & MCG_C2_IRCS_MASK) == 0x00U) {
       MCGOUTClock = CPU_INT_SLOW_CLK_HZ; /* Slow internal reference clock selected */
-    } else { /* (!((MCG->C2 & MCG_C2_IRCS_MASK) == 0x00U)) */
+    } else { /* Fast internal reference clock selected */
       Divider = (uint16_t)(0x01LU << ((MCG->SC & MCG_SC_FCRDIV_MASK) >> MCG_SC_FCRDIV_SHIFT));
-      MCGOUTClock = (uint32_t) (CPU_INT_FAST_CLK_HZ / Divider); /* Fast internal reference clock selected */
-    } /* (!((MCG->C2 & MCG_C2_IRCS_MASK) == 0x00U)) */
+      MCGOUTClock = (uint32_t) (CPU_INT_FAST_CLK_HZ / Divider);
+    }
   } else if ((MCG->C1 & MCG_C1_CLKS_MASK) == 0x80U) {
     /* External reference clock is selected */
     switch (MCG->C7 & MCG_C7_OSCSEL_MASK) {
@@ -195,10 +195,10 @@ void SystemCoreClockUpdate (void) {
       MCGOUTClock = CPU_INT_IRC_CLK_HZ; /* IRC 48MHz oscillator drives MCG clock */
       break;
     }
-  } else { /* (!((MCG->C1 & MCG_C1_CLKS_MASK) == 0x80U)) */
+  } else {
     /* Reserved value */
     return;
-  } /* (!((MCG->C1 & MCG_C1_CLKS_MASK) == 0x80U)) */
+  }
   SystemCoreClock = (MCGOUTClock / (0x01U + ((SIM->CLKDIV1 & SIM_CLKDIV1_OUTDIV1_MASK) >> SIM_CLKDIV1_OUTDIV1_SHIFT)));
 }
 

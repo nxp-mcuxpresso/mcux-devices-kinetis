@@ -11,13 +11,13 @@
 **
 **     Reference manual:    K32L2AxRM, Rev. 1, 12/2019
 **     Version:             rev. 1.0, 2019-10-30
-**     Build:               b240709
+**     Build:               b250414
 **
 **     Abstract:
 **         CMSIS Peripheral Access Layer for K32L2A41A
 **
 **     Copyright 1997-2016 Freescale Semiconductor, Inc.
-**     Copyright 2016-2024 NXP
+**     Copyright 2016-2025 NXP
 **     SPDX-License-Identifier: BSD-3-Clause
 **
 **     http:                 www.nxp.com
@@ -162,14 +162,14 @@ typedef enum IRQn {
 #include "core_cm0plus.h"              /* Core Peripheral Access Layer */
 #include "system_K32L2A41A.h"          /* Device specific configuration file */
 
-#define K32L2A41A_SERIES
-/* CPU specific feature definitions */
-#include "K32L2A41A_features.h"
-
 /*!
  * @}
  */ /* end of group Cortex_Core_Configuration */
 
+
+#define K32L2A41A_SERIES
+/* CPU specific feature definitions */
+#include "K32L2A41A_features.h"
 
 /* ADC - Peripheral instance base addresses */
 /** Peripheral ADC0 base address */

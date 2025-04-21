@@ -6,13 +6,13 @@
 **                          K32L2A41VLL1A
 **
 **     Version:             rev. 1.0, 2019-10-30
-**     Build:               b240709
+**     Build:               b250414
 **
 **     Abstract:
 **         CMSIS Peripheral Access Layer for LPIT
 **
 **     Copyright 1997-2016 Freescale Semiconductor, Inc.
-**     Copyright 2016-2024 NXP
+**     Copyright 2016-2025 NXP
 **     SPDX-License-Identifier: BSD-3-Clause
 **
 **     http:                 www.nxp.com
@@ -26,7 +26,7 @@
 */
 
 /*!
- * @file LPIT.h
+ * @file PERI_LPIT.h
  * @version 1.0
  * @date 2019-10-30
  * @brief CMSIS Peripheral Access Layer for LPIT
@@ -34,8 +34,8 @@
  * CMSIS Peripheral Access Layer for LPIT
  */
 
-#if !defined(LPIT_H_)
-#define LPIT_H_                                  /**< Symbol preventing repeated inclusion */
+#if !defined(PERI_LPIT_H_)
+#define PERI_LPIT_H_                             /**< Symbol preventing repeated inclusion */
 
 #if (defined(CPU_K32L2A31VLH1A) || defined(CPU_K32L2A31VLL1A))
 #include "K32L2A31A_COMMON.h"
@@ -97,7 +97,7 @@ typedef struct {
   __IO uint32_t MSR;                               /**< Module Status Register, offset: 0xC */
   __IO uint32_t MIER;                              /**< Module Interrupt Enable Register, offset: 0x10 */
   __IO uint32_t SETTEN;                            /**< Set Timer Enable Register, offset: 0x14 */
-  __O  uint32_t CLRTEN;                            /**< Clear Timer Enable Register, offset: 0x18 */
+  __IO uint32_t CLRTEN;                            /**< Clear Timer Enable Register, offset: 0x18 */
        uint8_t RESERVED_0[4];
   struct {                                         /* offset: 0x20, array step: 0x10 */
     __IO uint32_t TVAL;                              /**< Timer Value Register, array offset: 0x20, array step: 0x10 */
@@ -466,5 +466,5 @@ typedef struct {
  */ /* end of group Peripheral_access_layer */
 
 
-#endif  /* LPIT_H_ */
+#endif  /* PERI_LPIT_H_ */
 

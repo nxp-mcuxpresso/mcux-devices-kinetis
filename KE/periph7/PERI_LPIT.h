@@ -20,13 +20,13 @@
 **                          MKE17Z256VLL7
 **
 **     Version:             rev. 3.0, 2021-10-08
-**     Build:               b240715
+**     Build:               b250414
 **
 **     Abstract:
 **         CMSIS Peripheral Access Layer for LPIT
 **
 **     Copyright 1997-2016 Freescale Semiconductor, Inc.
-**     Copyright 2016-2024 NXP
+**     Copyright 2016-2025 NXP
 **     SPDX-License-Identifier: BSD-3-Clause
 **
 **     http:                 www.nxp.com
@@ -44,7 +44,7 @@
 */
 
 /*!
- * @file LPIT.h
+ * @file PERI_LPIT.h
  * @version 3.0
  * @date 2021-10-08
  * @brief CMSIS Peripheral Access Layer for LPIT
@@ -52,8 +52,8 @@
  * CMSIS Peripheral Access Layer for LPIT
  */
 
-#if !defined(LPIT_H_)
-#define LPIT_H_                                  /**< Symbol preventing repeated inclusion */
+#if !defined(PERI_LPIT_H_)
+#define PERI_LPIT_H_                             /**< Symbol preventing repeated inclusion */
 
 #if (defined(CPU_MKE12Z128VLF7) || defined(CPU_MKE12Z128VLH7) || defined(CPU_MKE12Z128VLL7) || defined(CPU_MKE12Z256VLF7) || defined(CPU_MKE12Z256VLH7) || defined(CPU_MKE12Z256VLL7))
 #include "MKE12Z7_COMMON.h"
@@ -117,7 +117,7 @@ typedef struct {
   __IO uint32_t MSR;                               /**< Module Status Register, offset: 0xC */
   __IO uint32_t MIER;                              /**< Module Interrupt Enable Register, offset: 0x10 */
   __IO uint32_t SETTEN;                            /**< Set Timer Enable Register, offset: 0x14 */
-  __O  uint32_t CLRTEN;                            /**< Clear Timer Enable Register, offset: 0x18 */
+  __IO uint32_t CLRTEN;                            /**< Clear Timer Enable Register, offset: 0x18 */
        uint8_t RESERVED_0[4];
   struct {                                         /* offset: 0x20, array step: 0x10 */
     __IO uint32_t TVAL;                              /**< Timer Value Register, array offset: 0x20, array step: 0x10 */
@@ -486,5 +486,5 @@ typedef struct {
  */ /* end of group Peripheral_access_layer */
 
 
-#endif  /* LPIT_H_ */
+#endif  /* PERI_LPIT_H_ */
 

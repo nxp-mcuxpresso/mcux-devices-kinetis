@@ -4,13 +4,13 @@
 **                          K32L3A60VPJ1A_cm4
 **
 **     Version:             rev. 1.0, 2019-04-22
-**     Build:               b240709
+**     Build:               b250414
 **
 **     Abstract:
 **         CMSIS Peripheral Access Layer for RTC
 **
 **     Copyright 1997-2016 Freescale Semiconductor, Inc.
-**     Copyright 2016-2024 NXP
+**     Copyright 2016-2025 NXP
 **     SPDX-License-Identifier: BSD-3-Clause
 **
 **     http:                 www.nxp.com
@@ -24,7 +24,7 @@
 */
 
 /*!
- * @file RTC.h
+ * @file PERI_RTC.h
  * @version 1.0
  * @date 2019-04-22
  * @brief CMSIS Peripheral Access Layer for RTC
@@ -32,8 +32,8 @@
  * CMSIS Peripheral Access Layer for RTC
  */
 
-#if !defined(RTC_H_)
-#define RTC_H_                                   /**< Symbol preventing repeated inclusion */
+#if !defined(PERI_RTC_H_)
+#define PERI_RTC_H_                              /**< Symbol preventing repeated inclusion */
 
 #if (defined(CPU_K32L3A60VPJ1A_cm0plus))
 #include "K32L3A60_cm0plus_COMMON.h"
@@ -150,13 +150,13 @@ typedef struct {
 #define RTC_TCR_TCR_MASK                         (0xFFU)
 #define RTC_TCR_TCR_SHIFT                        (0U)
 /*! TCR - Time Compensation Register
- *  0b10000000..Time Prescaler Register overflows every 32896 clock cycles.
- *  0b10000001..Time Prescaler Register overflows every 32895 clock cycles.
- *  0b11111111..Time Prescaler Register overflows every 32769 clock cycles.
  *  0b00000000..Time Prescaler Register overflows every 32768 clock cycles.
  *  0b00000001..Time Prescaler Register overflows every 32767 clock cycles.
  *  0b01111110..Time Prescaler Register overflows every 32642 clock cycles.
  *  0b01111111..Time Prescaler Register overflows every 32641 clock cycles.
+ *  0b10000000..Time Prescaler Register overflows every 32896 clock cycles.
+ *  0b10000001..Time Prescaler Register overflows every 32895 clock cycles.
+ *  0b11111111..Time Prescaler Register overflows every 32769 clock cycles.
  */
 #define RTC_TCR_TCR(x)                           (((uint32_t)(((uint32_t)(x)) << RTC_TCR_TCR_SHIFT)) & RTC_TCR_TCR_MASK)
 
@@ -962,5 +962,5 @@ typedef struct {
  */ /* end of group Peripheral_access_layer */
 
 
-#endif  /* RTC_H_ */
+#endif  /* PERI_RTC_H_ */
 

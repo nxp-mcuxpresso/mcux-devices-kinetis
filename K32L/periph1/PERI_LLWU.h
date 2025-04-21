@@ -6,13 +6,13 @@
 **                          K32L2A41VLL1A
 **
 **     Version:             rev. 1.0, 2019-10-30
-**     Build:               b240709
+**     Build:               b250414
 **
 **     Abstract:
 **         CMSIS Peripheral Access Layer for LLWU
 **
 **     Copyright 1997-2016 Freescale Semiconductor, Inc.
-**     Copyright 2016-2024 NXP
+**     Copyright 2016-2025 NXP
 **     SPDX-License-Identifier: BSD-3-Clause
 **
 **     http:                 www.nxp.com
@@ -26,7 +26,7 @@
 */
 
 /*!
- * @file LLWU.h
+ * @file PERI_LLWU.h
  * @version 1.0
  * @date 2019-10-30
  * @brief CMSIS Peripheral Access Layer for LLWU
@@ -34,8 +34,8 @@
  * CMSIS Peripheral Access Layer for LLWU
  */
 
-#if !defined(LLWU_H_)
-#define LLWU_H_                                  /**< Symbol preventing repeated inclusion */
+#if !defined(PERI_LLWU_H_)
+#define PERI_LLWU_H_                             /**< Symbol preventing repeated inclusion */
 
 #if (defined(CPU_K32L2A31VLH1A) || defined(CPU_K32L2A31VLL1A))
 #include "K32L2A31A_COMMON.h"
@@ -1092,5 +1092,5 @@ typedef struct {
  */ /* end of group Peripheral_access_layer */
 
 
-#endif  /* LLWU_H_ */
+#endif  /* PERI_LLWU_H_ */
 

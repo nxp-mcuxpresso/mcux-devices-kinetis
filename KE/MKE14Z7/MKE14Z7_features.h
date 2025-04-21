@@ -1,7 +1,7 @@
 /*
 ** ###################################################################
 **     Version:             rev. 6.0, 2016-09-20
-**     Build:               b250322
+**     Build:               b250414
 **
 **     Abstract:
 **         Chip specific module features.
@@ -131,6 +131,18 @@
 #define FSL_FEATURE_ACMP_HAS_C1_DMODE_BIT (0)
 /* @brief Has C2 RRE Bit */
 #define FSL_FEATURE_ACMP_HAS_C2_RRE_BIT (1)
+/* @brief Has C3 RDIVE Bit */
+#define FSL_FEATURE_ACMP_HAS_C3_RDIVE_BIT (0)
+/* @brief If support round-robin mode */
+#define FSL_FEATURE_ACMP_HAS_NO_ROUNDROBIN_MODE (0)
+/* @brief If support 3v domain */
+#define FSL_FEATURE_ACMP_HAS_NO_3V_DOMAIN (1)
+/* @brief If support window mode */
+#define FSL_FEATURE_ACMP_HAS_NO_WINDOW_MODE (0)
+/* @brief If support filter mode */
+#define FSL_FEATURE_ACMP_HAS_NO_FILTER_MODE (0)
+/* @brief Has No C0 SE Bit */
+#define FSL_FEATURE_ACMP_HAS_NO_C0_SE_BIT (0)
 
 /* CRC module features */
 
@@ -656,10 +668,10 @@
 
 /* @brief Has separate DMA RX and TX requests. */
 #define FSL_FEATURE_LPI2C_HAS_SEPARATE_DMA_RX_TX_REQn(x) (1)
-/* @brief Has dedicated interrupt for master and slave. */
-#define FSL_FEATURE_LPI2C_HAS_ROLE_SPLIT_IRQ (0)
 /* @brief Capacity (number of entries) of the transmit/receive FIFO (or zero if no FIFO is available). */
 #define FSL_FEATURE_LPI2C_FIFO_SIZEn(x) (4)
+/* @brief Has dedicated interrupt for master and slave. */
+#define FSL_FEATURE_LPI2C_HAS_ROLE_SPLIT_IRQ (0)
 
 /* LPIT module features */
 

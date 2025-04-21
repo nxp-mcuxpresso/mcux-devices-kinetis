@@ -106,7 +106,6 @@ void SystemCoreClockUpdate (void) {
           /* Reference Divider */
           Temp = ((uint16_t)ICS->C1 & ICS_C1_RDIV_MASK) >> ICS_C1_RDIV_SHIFT;
           Temp = (Temp + 1U) * (((OSC->CR & OSC_CR_RANGE_MASK) != 0x0U) ? 32U : 1U);
-
           ICSOUTClock = CPU_XTAL_CLK_HZ / Temp * 1024UL;
       }
       break;
@@ -126,7 +125,6 @@ void SystemCoreClockUpdate (void) {
       break;
   }
   SystemCoreClock = (ICSOUTClock / Divider);
-
 }
 
 /* ----------------------------------------------------------------------------

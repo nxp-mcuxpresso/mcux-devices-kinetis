@@ -4,13 +4,13 @@
 **                          K32L3A60VPJ1A_cm4
 **
 **     Version:             rev. 1.0, 2019-04-22
-**     Build:               b240709
+**     Build:               b250414
 **
 **     Abstract:
 **         CMSIS Peripheral Access Layer for EWM
 **
 **     Copyright 1997-2016 Freescale Semiconductor, Inc.
-**     Copyright 2016-2024 NXP
+**     Copyright 2016-2025 NXP
 **     SPDX-License-Identifier: BSD-3-Clause
 **
 **     http:                 www.nxp.com
@@ -24,7 +24,7 @@
 */
 
 /*!
- * @file EWM.h
+ * @file PERI_EWM.h
  * @version 1.0
  * @date 2019-04-22
  * @brief CMSIS Peripheral Access Layer for EWM
@@ -32,8 +32,8 @@
  * CMSIS Peripheral Access Layer for EWM
  */
 
-#if !defined(EWM_H_)
-#define EWM_H_                                   /**< Symbol preventing repeated inclusion */
+#if !defined(PERI_EWM_H_)
+#define PERI_EWM_H_                              /**< Symbol preventing repeated inclusion */
 
 #if (defined(CPU_K32L3A60VPJ1A_cm0plus))
 #include "K32L3A60_cm0plus_COMMON.h"
@@ -84,7 +84,7 @@
 /** EWM - Register Layout Typedef */
 typedef struct {
   __IO uint8_t CTRL;                               /**< Control Register, offset: 0x0 */
-  __O  uint8_t SERV;                               /**< Service Register, offset: 0x1 */
+  __IO uint8_t SERV;                               /**< Service Register, offset: 0x1 */
   __IO uint8_t CMPL;                               /**< Compare Low Register, offset: 0x2 */
   __IO uint8_t CMPH;                               /**< Compare High Register, offset: 0x3 */
        uint8_t RESERVED_0[1];
@@ -194,5 +194,5 @@ typedef struct {
  */ /* end of group Peripheral_access_layer */
 
 
-#endif  /* EWM_H_ */
+#endif  /* PERI_EWM_H_ */
 

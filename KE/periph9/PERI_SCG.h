@@ -8,13 +8,13 @@
 **                          MKE17Z512VLL9
 **
 **     Version:             rev. 2.0, 2023-10-08
-**     Build:               b240715
+**     Build:               b250414
 **
 **     Abstract:
 **         CMSIS Peripheral Access Layer for SCG
 **
 **     Copyright 1997-2016 Freescale Semiconductor, Inc.
-**     Copyright 2016-2024 NXP
+**     Copyright 2016-2025 NXP
 **     SPDX-License-Identifier: BSD-3-Clause
 **
 **     http:                 www.nxp.com
@@ -30,7 +30,7 @@
 */
 
 /*!
- * @file SCG.h
+ * @file PERI_SCG.h
  * @version 2.0
  * @date 2023-10-08
  * @brief CMSIS Peripheral Access Layer for SCG
@@ -38,8 +38,8 @@
  * CMSIS Peripheral Access Layer for SCG
  */
 
-#if !defined(SCG_H_)
-#define SCG_H_                                   /**< Symbol preventing repeated inclusion */
+#if !defined(PERI_SCG_H_)
+#define PERI_SCG_H_                              /**< Symbol preventing repeated inclusion */
 
 #if (defined(CPU_MKE12Z512VLH9) || defined(CPU_MKE12Z512VLL9))
 #include "MKE12Z9_COMMON.h"
@@ -151,18 +151,18 @@ typedef struct {
 #define SCG_PARAM_CLKPRES_SHIFT                  (0U)
 /*! CLKPRES - Clock Present
  *  0b00000000-0b00000001..Reserved
- *  0bxxxxxx1x..System OSC (SOSC) is present.
- *  0bxxxxx1xx..Slow IRC (SIRC) is present.
- *  0bxxxx1xxx..Fast IRC (FIRC) is present.
  *  0bxx1xxxxx..Low Power FLL (LPFLL) is present.
+ *  0bxxxx1xxx..Fast IRC (FIRC) is present.
+ *  0bxxxxx1xx..Slow IRC (SIRC) is present.
+ *  0bxxxxxx1x..System OSC (SOSC) is present.
  */
 #define SCG_PARAM_CLKPRES(x)                     (((uint32_t)(((uint32_t)(x)) << SCG_PARAM_CLKPRES_SHIFT)) & SCG_PARAM_CLKPRES_MASK)
 
 #define SCG_PARAM_DIVPRES_MASK                   (0xF8000000U)
 #define SCG_PARAM_DIVPRES_SHIFT                  (27U)
 /*! DIVPRES - Divider Present
- *  0bxxxx1..System DIVSLOW is present.
  *  0b1xxxx..System DIVCORE is present.
+ *  0bxxxx1..System DIVSLOW is present.
  */
 #define SCG_PARAM_DIVPRES(x)                     (((uint32_t)(((uint32_t)(x)) << SCG_PARAM_DIVPRES_SHIFT)) & SCG_PARAM_DIVPRES_MASK)
 /*! @} */
@@ -989,5 +989,5 @@ typedef struct {
  */ /* end of group Peripheral_access_layer */
 
 
-#endif  /* SCG_H_ */
+#endif  /* PERI_SCG_H_ */
 

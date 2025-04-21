@@ -117,7 +117,6 @@ void SystemCoreClockUpdate (void) {
       break;
   }
   SystemCoreClock = (SCGOUTClock / Divider);
-
 }
 
 /* ----------------------------------------------------------------------------

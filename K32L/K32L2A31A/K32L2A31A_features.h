@@ -1,7 +1,7 @@
 /*
 ** ###################################################################
 **     Version:             rev. 1.0, 2019-10-30
-**     Build:               b250321
+**     Build:               b250414
 **
 **     Abstract:
 **         Chip specific module features.
@@ -922,10 +922,10 @@
 
 /* @brief Has separate DMA RX and TX requests. */
 #define FSL_FEATURE_LPI2C_HAS_SEPARATE_DMA_RX_TX_REQn(x) (1)
-/* @brief Has dedicated interrupt for master and slave. */
-#define FSL_FEATURE_LPI2C_HAS_ROLE_SPLIT_IRQ (0)
 /* @brief Capacity (number of entries) of the transmit/receive FIFO (or zero if no FIFO is available). */
 #define FSL_FEATURE_LPI2C_FIFO_SIZEn(x) (4)
+/* @brief Has dedicated interrupt for master and slave. */
+#define FSL_FEATURE_LPI2C_HAS_ROLE_SPLIT_IRQ (0)
 
 /* LPIT module features */
 

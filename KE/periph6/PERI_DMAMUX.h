@@ -10,13 +10,13 @@
 **                          MKE15Z256VLL7
 **
 **     Version:             rev. 6.0, 2016-09-20
-**     Build:               b240715
+**     Build:               b250414
 **
 **     Abstract:
 **         CMSIS Peripheral Access Layer for DMAMUX
 **
 **     Copyright 1997-2016 Freescale Semiconductor, Inc.
-**     Copyright 2016-2024 NXP
+**     Copyright 2016-2025 NXP
 **     SPDX-License-Identifier: BSD-3-Clause
 **
 **     http:                 www.nxp.com
@@ -40,7 +40,7 @@
 */
 
 /*!
- * @file DMAMUX.h
+ * @file PERI_DMAMUX.h
  * @version 6.0
  * @date 2016-09-20
  * @brief CMSIS Peripheral Access Layer for DMAMUX
@@ -48,8 +48,8 @@
  * CMSIS Peripheral Access Layer for DMAMUX
  */
 
-#if !defined(DMAMUX_H_)
-#define DMAMUX_H_                                /**< Symbol preventing repeated inclusion */
+#if !defined(PERI_DMAMUX_H_)
+#define PERI_DMAMUX_H_                           /**< Symbol preventing repeated inclusion */
 
 #if (defined(CPU_MKE14Z128VLH7) || defined(CPU_MKE14Z128VLL7) || defined(CPU_MKE14Z256VLH7) || defined(CPU_MKE14Z256VLL7))
 #include "MKE14Z7_COMMON.h"
@@ -230,5 +230,5 @@ typedef struct {
  */ /* end of group Peripheral_access_layer */
 
 
-#endif  /* DMAMUX_H_ */
+#endif  /* PERI_DMAMUX_H_ */
 

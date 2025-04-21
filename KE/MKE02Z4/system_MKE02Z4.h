@@ -65,15 +65,15 @@ extern "C" {
 
 
 #ifndef DISABLE_WDOG
-  #define DISABLE_WDOG      1
+  #define DISABLE_WDOG  1
 #endif
 
 /* Define clock source values */
+#define CPU_XTAL_CLK_HZ                10000000UL          /* Value of the external crystal or oscillator clock frequency in Hz */
+#define CPU_INT_IRC_CLK_HZ             32768UL             /* Value of the 32k internal oscillator clock frequency in Hz */
 
-#define CPU_XTAL_CLK_HZ                10000000UL           /* Value of the external crystal or oscillator clock frequency in Hz */
-#define CPU_INT_IRC_CLK_HZ             32768UL              /* Value of the 32k internal oscillator clock frequency in Hz  */
+#define DEFAULT_SYSTEM_CLOCK           16777216UL          /* Default System clock value */
 
-#define DEFAULT_SYSTEM_CLOCK           16777216UL           /* Default System clock value */
 
 
 /**

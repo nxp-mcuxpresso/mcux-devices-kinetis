@@ -55,14 +55,14 @@ extern "C" {
 #endif
 
 /* Define clock source values */
-#define CPU_XTAL_CLK_HZ                 8000000u            /* Value of the external crystal or oscillator clock frequency in Hz */
+#define CPU_XTAL_CLK_HZ                8000000U            /* Value of the external crystal or oscillator clock frequency in Hz */
 
 /* Low power mode enable */
 /* SMC_PMPROT: AHSRUN=1, AVLP=1,ALLS=1,AVLLS=0x3 */
-#define SYSTEM_SMC_PMPROT_VALUE        0xABu               /* SMC_PMPROT */
-#define SYSTEM_SMC_PMCTRL_VALUE        0x0u                /* SMC_PMCTRL */
+#define SYSTEM_SMC_PMPROT_VALUE        0xABU               /* SMC_PMPROT */
+#define SYSTEM_SMC_PMCTRL_VALUE        0x0U                /* SMC_PMCTRL */
 
-#define DEFAULT_SYSTEM_CLOCK           48000000u           /* Default System clock value */
+#define DEFAULT_SYSTEM_CLOCK           48000000U           /* Default System clock value */
 
 
 

@@ -91,7 +91,7 @@ void SystemInit (void) {
     }
     if ((SCB->AIRCR & SCB_AIRCR_PRIGROUP_Msk) != 0x0U)
     {
-        SCB->AIRCR = 0x05FA0000;
+        SCB->AIRCR = 0x05FA0000U;
     }
   }
 

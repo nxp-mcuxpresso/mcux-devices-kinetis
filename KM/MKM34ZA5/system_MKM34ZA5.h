@@ -52,21 +52,21 @@ extern "C" {
 
 
 #ifndef DISABLE_WDOG
-  #define DISABLE_WDOG                 1
+  #define DISABLE_WDOG  1
 #endif
 
 /* Define clock source values */
-
-#define CPU_XTAL_CLK_HZ                8000000u            /* Value of the external crystal or oscillator clock frequency in Hz */
-#define CPU_XTAL32k_CLK_HZ             32768u              /* Value of the external 32k crystal or oscillator clock frequency in Hz */
-#define CPU_INT_SLOW_CLK_HZ            32768u              /* Value of the slow internal oscillator clock frequency in Hz  */
-#define CPU_INT_FAST_CLK_HZ            4000000u            /* Value of the fast internal oscillator clock frequency in Hz  */
+#define CPU_XTAL_CLK_HZ                8000000U            /* Value of the external crystal or oscillator clock frequency in Hz */
+#define CPU_XTAL32k_CLK_HZ             32768U              /* Value of the external 32k crystal or oscillator clock frequency in Hz */
+#define CPU_INT_SLOW_CLK_HZ            32768U              /* Value of the slow internal oscillator clock frequency in Hz */
+#define CPU_INT_FAST_CLK_HZ            4000000U            /* Value of the fast internal oscillator clock frequency in Hz */
 
 /* Low power mode enable */
 /* SMC_PMPROT: AVLP=1,AVLLS=1 */
 #define SYSTEM_SMC_PMPROT_VALUE        0x22U               /* SMC_PMPROT */
 
-#define DEFAULT_SYSTEM_CLOCK           2000000u            /* Default System clock value */
+#define DEFAULT_SYSTEM_CLOCK           2000000U            /* Default System clock value */
+
 
 
 /**

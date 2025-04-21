@@ -20,13 +20,13 @@
 **                          MKE17Z256VLL7
 **
 **     Version:             rev. 3.0, 2021-10-08
-**     Build:               b240715
+**     Build:               b250414
 **
 **     Abstract:
 **         CMSIS Peripheral Access Layer for FTM
 **
 **     Copyright 1997-2016 Freescale Semiconductor, Inc.
-**     Copyright 2016-2024 NXP
+**     Copyright 2016-2025 NXP
 **     SPDX-License-Identifier: BSD-3-Clause
 **
 **     http:                 www.nxp.com
@@ -44,7 +44,7 @@
 */
 
 /*!
- * @file FTM.h
+ * @file PERI_FTM.h
  * @version 3.0
  * @date 2021-10-08
  * @brief CMSIS Peripheral Access Layer for FTM
@@ -52,8 +52,8 @@
  * CMSIS Peripheral Access Layer for FTM
  */
 
-#if !defined(FTM_H_)
-#define FTM_H_                                   /**< Symbol preventing repeated inclusion */
+#if !defined(PERI_FTM_H_)
+#define PERI_FTM_H_                              /**< Symbol preventing repeated inclusion */
 
 #if (defined(CPU_MKE12Z128VLF7) || defined(CPU_MKE12Z128VLH7) || defined(CPU_MKE12Z128VLL7) || defined(CPU_MKE12Z256VLF7) || defined(CPU_MKE12Z256VLH7) || defined(CPU_MKE12Z256VLL7))
 #include "MKE12Z7_COMMON.h"
@@ -1846,5 +1846,5 @@ typedef struct {
  */ /* end of group Peripheral_access_layer */
 
 
-#endif  /* FTM_H_ */
+#endif  /* PERI_FTM_H_ */
 

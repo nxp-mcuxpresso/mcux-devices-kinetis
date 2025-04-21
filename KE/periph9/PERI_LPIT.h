@@ -8,13 +8,13 @@
 **                          MKE17Z512VLL9
 **
 **     Version:             rev. 2.0, 2023-10-08
-**     Build:               b240715
+**     Build:               b250414
 **
 **     Abstract:
 **         CMSIS Peripheral Access Layer for LPIT
 **
 **     Copyright 1997-2016 Freescale Semiconductor, Inc.
-**     Copyright 2016-2024 NXP
+**     Copyright 2016-2025 NXP
 **     SPDX-License-Identifier: BSD-3-Clause
 **
 **     http:                 www.nxp.com
@@ -30,7 +30,7 @@
 */
 
 /*!
- * @file LPIT.h
+ * @file PERI_LPIT.h
  * @version 2.0
  * @date 2023-10-08
  * @brief CMSIS Peripheral Access Layer for LPIT
@@ -38,8 +38,8 @@
  * CMSIS Peripheral Access Layer for LPIT
  */
 
-#if !defined(LPIT_H_)
-#define LPIT_H_                                  /**< Symbol preventing repeated inclusion */
+#if !defined(PERI_LPIT_H_)
+#define PERI_LPIT_H_                             /**< Symbol preventing repeated inclusion */
 
 #if (defined(CPU_MKE12Z512VLH9) || defined(CPU_MKE12Z512VLL9))
 #include "MKE12Z9_COMMON.h"
@@ -103,7 +103,7 @@ typedef struct {
   __IO uint32_t MSR;                               /**< Module Status, offset: 0xC */
   __IO uint32_t MIER;                              /**< Module Interrupt Enable, offset: 0x10 */
   __IO uint32_t SETTEN;                            /**< Set Timer Enable, offset: 0x14 */
-  __O  uint32_t CLRTEN;                            /**< Clear Timer Enable, offset: 0x18 */
+  __IO uint32_t CLRTEN;                            /**< Clear Timer Enable, offset: 0x18 */
        uint8_t RESERVED_0[4];
   struct {                                         /* offset: 0x20, array step: 0x10 */
     __IO uint32_t TVAL;                              /**< Timer Value, array offset: 0x20, array step: 0x10 */
@@ -198,8 +198,8 @@ typedef struct {
 #define LPIT_MSR_TIF0_SHIFT                      (0U)
 /*! TIF0 - Channel 0 Timer Interrupt Flag
  *  0b0..Not timed out
- *  0b1..Timed out
  *  0b0..No effect
+ *  0b1..Timed out
  *  0b1..Clear the flag
  */
 #define LPIT_MSR_TIF0(x)                         (((uint32_t)(((uint32_t)(x)) << LPIT_MSR_TIF0_SHIFT)) & LPIT_MSR_TIF0_MASK)
@@ -208,8 +208,8 @@ typedef struct {
 #define LPIT_MSR_TIF1_SHIFT                      (1U)
 /*! TIF1 - Channel 1 Timer Interrupt Flag
  *  0b0..Not timed out
- *  0b1..Timed out
  *  0b0..No effect
+ *  0b1..Timed out
  *  0b1..Clear the flag
  */
 #define LPIT_MSR_TIF1(x)                         (((uint32_t)(((uint32_t)(x)) << LPIT_MSR_TIF1_SHIFT)) & LPIT_MSR_TIF1_MASK)
@@ -218,8 +218,8 @@ typedef struct {
 #define LPIT_MSR_TIF2_SHIFT                      (2U)
 /*! TIF2 - Channel 2 Timer Interrupt Flag
  *  0b0..Not timed out
- *  0b1..Timed out
  *  0b0..No effect
+ *  0b1..Timed out
  *  0b1..Clear the flag
  */
 #define LPIT_MSR_TIF2(x)                         (((uint32_t)(((uint32_t)(x)) << LPIT_MSR_TIF2_SHIFT)) & LPIT_MSR_TIF2_MASK)
@@ -228,8 +228,8 @@ typedef struct {
 #define LPIT_MSR_TIF3_SHIFT                      (3U)
 /*! TIF3 - Channel 3 Timer Interrupt Flag
  *  0b0..Not timed out
- *  0b1..Timed out
  *  0b0..No effect
+ *  0b1..Timed out
  *  0b1..Clear the flag
  */
 #define LPIT_MSR_TIF3(x)                         (((uint32_t)(((uint32_t)(x)) << LPIT_MSR_TIF3_SHIFT)) & LPIT_MSR_TIF3_MASK)
@@ -479,5 +479,5 @@ typedef struct {
  */ /* end of group Peripheral_access_layer */
 
 
-#endif  /* LPIT_H_ */
+#endif  /* PERI_LPIT_H_ */
 

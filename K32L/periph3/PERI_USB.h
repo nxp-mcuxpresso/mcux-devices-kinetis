@@ -4,13 +4,13 @@
 **                          K32L3A60VPJ1A_cm4
 **
 **     Version:             rev. 1.0, 2019-04-22
-**     Build:               b240709
+**     Build:               b250414
 **
 **     Abstract:
 **         CMSIS Peripheral Access Layer for USB
 **
 **     Copyright 1997-2016 Freescale Semiconductor, Inc.
-**     Copyright 2016-2024 NXP
+**     Copyright 2016-2025 NXP
 **     SPDX-License-Identifier: BSD-3-Clause
 **
 **     http:                 www.nxp.com
@@ -24,7 +24,7 @@
 */
 
 /*!
- * @file USB.h
+ * @file PERI_USB.h
  * @version 1.0
  * @date 2019-04-22
  * @brief CMSIS Peripheral Access Layer for USB
@@ -32,8 +32,8 @@
  * CMSIS Peripheral Access Layer for USB
  */
 
-#if !defined(USB_H_)
-#define USB_H_                                   /**< Symbol preventing repeated inclusion */
+#if !defined(PERI_USB_H_)
+#define PERI_USB_H_                              /**< Symbol preventing repeated inclusion */
 
 #if (defined(CPU_K32L3A60VPJ1A_cm0plus))
 #include "K32L3A60_cm0plus_COMMON.h"
@@ -1209,5 +1209,5 @@ typedef struct {
  */ /* end of group Peripheral_access_layer */
 
 
-#endif  /* USB_H_ */
+#endif  /* PERI_USB_H_ */
 

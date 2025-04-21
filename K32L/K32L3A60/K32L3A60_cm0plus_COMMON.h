@@ -8,13 +8,13 @@
 **
 **     Reference manual:    K32L3ARM, Rev. 0 , 05/2019
 **     Version:             rev. 1.0, 2019-04-22
-**     Build:               b240709
+**     Build:               b250414
 **
 **     Abstract:
 **         CMSIS Peripheral Access Layer for K32L3A60_cm0plus
 **
 **     Copyright 1997-2016 Freescale Semiconductor, Inc.
-**     Copyright 2016-2024 NXP
+**     Copyright 2016-2025 NXP
 **     SPDX-License-Identifier: BSD-3-Clause
 **
 **     http:                 www.nxp.com
@@ -159,14 +159,14 @@ typedef enum IRQn {
 #include "core_cm0plus.h"              /* Core Peripheral Access Layer */
 #include "system_K32L3A60_cm0plus.h"   /* Device specific configuration file */
 
-#define K32L3A60_cm0plus_SERIES
-/* CPU specific feature definitions */
-#include "K32L3A60_cm0plus_features.h"
-
 /*!
  * @}
  */ /* end of group Cortex_Core_Configuration */
 
+
+#define K32L3A60_cm0plus_SERIES
+/* CPU specific feature definitions */
+#include "K32L3A60_cm0plus_features.h"
 
 /* ADC - Peripheral instance base addresses */
 /** Peripheral LPADC0 base address */

@@ -10,13 +10,13 @@
 **                          MKE15Z256VLL7
 **
 **     Version:             rev. 6.0, 2016-09-20
-**     Build:               b240715
+**     Build:               b250414
 **
 **     Abstract:
 **         CMSIS Peripheral Access Layer for LPUART
 **
 **     Copyright 1997-2016 Freescale Semiconductor, Inc.
-**     Copyright 2016-2024 NXP
+**     Copyright 2016-2025 NXP
 **     SPDX-License-Identifier: BSD-3-Clause
 **
 **     http:                 www.nxp.com
@@ -40,7 +40,7 @@
 */
 
 /*!
- * @file LPUART.h
+ * @file PERI_LPUART.h
  * @version 6.0
  * @date 2016-09-20
  * @brief CMSIS Peripheral Access Layer for LPUART
@@ -48,8 +48,8 @@
  * CMSIS Peripheral Access Layer for LPUART
  */
 
-#if !defined(LPUART_H_)
-#define LPUART_H_                                /**< Symbol preventing repeated inclusion */
+#if !defined(PERI_LPUART_H_)
+#define PERI_LPUART_H_                           /**< Symbol preventing repeated inclusion */
 
 #if (defined(CPU_MKE14Z128VLH7) || defined(CPU_MKE14Z128VLL7) || defined(CPU_MKE14Z256VLH7) || defined(CPU_MKE14Z256VLL7))
 #include "MKE14Z7_COMMON.h"
@@ -1056,5 +1056,5 @@ typedef struct {
  */ /* end of group Peripheral_access_layer */
 
 
-#endif  /* LPUART_H_ */
+#endif  /* PERI_LPUART_H_ */
 

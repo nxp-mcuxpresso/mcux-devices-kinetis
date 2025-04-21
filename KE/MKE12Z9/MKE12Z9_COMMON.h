@@ -11,13 +11,13 @@
 **
 **     Reference manual:    KE1xZP100M96SF0RM, Rev. 1, Sep. 2023
 **     Version:             rev. 2.0, 2023-10-08
-**     Build:               b240715
+**     Build:               b250414
 **
 **     Abstract:
 **         CMSIS Peripheral Access Layer for MKE12Z9
 **
 **     Copyright 1997-2016 Freescale Semiconductor, Inc.
-**     Copyright 2016-2024 NXP
+**     Copyright 2016-2025 NXP
 **     SPDX-License-Identifier: BSD-3-Clause
 **
 **     http:                 www.nxp.com
@@ -132,14 +132,14 @@ typedef enum IRQn {
 #include "core_cm0plus.h"              /* Core Peripheral Access Layer */
 #include "system_MKE12Z9.h"            /* Device specific configuration file */
 
-#define MKE12Z9_SERIES
-/* CPU specific feature definitions */
-#include "MKE12Z9_features.h"
-
 /*!
  * @}
  */ /* end of group Cortex_Core_Configuration */
 
+
+#define MKE12Z9_SERIES
+/* CPU specific feature definitions */
+#include "MKE12Z9_features.h"
 
 /* ADC - Peripheral instance base addresses */
 /** Peripheral ADC0 base address */

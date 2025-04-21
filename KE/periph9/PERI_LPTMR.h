@@ -8,13 +8,13 @@
 **                          MKE17Z512VLL9
 **
 **     Version:             rev. 2.0, 2023-10-08
-**     Build:               b240715
+**     Build:               b250414
 **
 **     Abstract:
 **         CMSIS Peripheral Access Layer for LPTMR
 **
 **     Copyright 1997-2016 Freescale Semiconductor, Inc.
-**     Copyright 2016-2024 NXP
+**     Copyright 2016-2025 NXP
 **     SPDX-License-Identifier: BSD-3-Clause
 **
 **     http:                 www.nxp.com
@@ -30,7 +30,7 @@
 */
 
 /*!
- * @file LPTMR.h
+ * @file PERI_LPTMR.h
  * @version 2.0
  * @date 2023-10-08
  * @brief CMSIS Peripheral Access Layer for LPTMR
@@ -38,8 +38,8 @@
  * CMSIS Peripheral Access Layer for LPTMR
  */
 
-#if !defined(LPTMR_H_)
-#define LPTMR_H_                                 /**< Symbol preventing repeated inclusion */
+#if !defined(PERI_LPTMR_H_)
+#define PERI_LPTMR_H_                            /**< Symbol preventing repeated inclusion */
 
 #if (defined(CPU_MKE12Z512VLH9) || defined(CPU_MKE12Z512VLL9))
 #include "MKE12Z9_COMMON.h"
@@ -166,8 +166,8 @@ typedef struct {
 #define LPTMR_CSR_TCF_SHIFT                      (7U)
 /*! TCF - Timer Compare Flag
  *  0b0..CNR != (CMR + 1)
- *  0b1..CNR = (CMR + 1)
  *  0b0..No effect
+ *  0b1..CNR = (CMR + 1)
  *  0b1..Clear the flag
  */
 #define LPTMR_CSR_TCF(x)                         (((uint32_t)(((uint32_t)(x)) << LPTMR_CSR_TCF_SHIFT)) & LPTMR_CSR_TCF_MASK)
@@ -279,5 +279,5 @@ typedef struct {
  */ /* end of group Peripheral_access_layer */
 
 
-#endif  /* LPTMR_H_ */
+#endif  /* PERI_LPTMR_H_ */
 

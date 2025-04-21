@@ -4,13 +4,13 @@
 **                          K32L3A60VPJ1A_cm4
 **
 **     Version:             rev. 1.0, 2019-04-22
-**     Build:               b240709
+**     Build:               b250414
 **
 **     Abstract:
 **         CMSIS Peripheral Access Layer for LPDAC
 **
 **     Copyright 1997-2016 Freescale Semiconductor, Inc.
-**     Copyright 2016-2024 NXP
+**     Copyright 2016-2025 NXP
 **     SPDX-License-Identifier: BSD-3-Clause
 **
 **     http:                 www.nxp.com
@@ -24,7 +24,7 @@
 */
 
 /*!
- * @file LPDAC.h
+ * @file PERI_LPDAC.h
  * @version 1.0
  * @date 2019-04-22
  * @brief CMSIS Peripheral Access Layer for LPDAC
@@ -32,8 +32,8 @@
  * CMSIS Peripheral Access Layer for LPDAC
  */
 
-#if !defined(LPDAC_H_)
-#define LPDAC_H_                                 /**< Symbol preventing repeated inclusion */
+#if !defined(PERI_LPDAC_H_)
+#define PERI_LPDAC_H_                            /**< Symbol preventing repeated inclusion */
 
 #if (defined(CPU_K32L3A60VPJ1A_cm0plus))
 #include "K32L3A60_cm0plus_COMMON.h"
@@ -85,7 +85,7 @@
 typedef struct {
   __I  uint32_t VERID;                             /**< Version Identifier Register, offset: 0x0 */
   __I  uint32_t PARAM;                             /**< Parameter Register, offset: 0x4 */
-  __O  uint32_t DATA;                              /**< DAC Data Register, offset: 0x8 */
+  __IO uint32_t DATA;                              /**< DAC Data Register, offset: 0x8 */
   __IO uint32_t GCR;                               /**< DAC Global Control Register, offset: 0xC */
   __IO uint32_t FCR;                               /**< DAC FIFO Control Register, offset: 0x10 */
   __I  uint32_t FPR;                               /**< DAC FIFO Pointer Register, offset: 0x14 */
@@ -93,7 +93,7 @@ typedef struct {
   __IO uint32_t IER;                               /**< DAC Interrupt Enable Register, offset: 0x1C */
   __IO uint32_t DER;                               /**< DAC DMA Enable Register, offset: 0x20 */
   __IO uint32_t RCR;                               /**< DAC Reset Control Register, offset: 0x24 */
-  __O  uint32_t TCR;                               /**< DAC Trigger Control Register, offset: 0x28 */
+  __IO uint32_t TCR;                               /**< DAC Trigger Control Register, offset: 0x28 */
 } LPDAC_Type;
 
 /* ----------------------------------------------------------------------------
@@ -419,5 +419,5 @@ typedef struct {
  */ /* end of group Peripheral_access_layer */
 
 
-#endif  /* LPDAC_H_ */
+#endif  /* PERI_LPDAC_H_ */
 

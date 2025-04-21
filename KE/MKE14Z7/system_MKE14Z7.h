@@ -66,22 +66,22 @@ extern "C" {
 
 
 #ifndef DISABLE_WDOG
-  #define DISABLE_WDOG      1
+  #define DISABLE_WDOG  1
 #endif
 
 /* Define clock source values */
-
-#define CPU_XTAL_CLK_HZ                8000000u            /* Value of the external crystal or oscillator clock frequency in Hz */
-#define CPU_INT_FAST_CLK_HZ            48000000u           /* Value of the fast internal oscillator clock frequency in Hz  */
-#define CPU_INT_IRC_CLK_HZ             48000000u           /* Value of the 48M internal oscillator clock frequency in Hz  */
+#define CPU_XTAL_CLK_HZ                8000000U            /* Value of the external crystal or oscillator clock frequency in Hz */
+#define CPU_INT_FAST_CLK_HZ            48000000U           /* Value of the fast internal oscillator clock frequency in Hz */
+#define CPU_INT_IRC_CLK_HZ             48000000U           /* Value of the 48M internal oscillator clock frequency in Hz */
 
 /* Low power mode enable */
 /* SMC_PMPROT: AVLP=1 */
-#define SYSTEM_SMC_PMPROT_VALUE        0x20u               /* SMC_PMPROT */
-#define SYSTEM_SMC_PMCTRL_VALUE        0x0u                /* SMC_PMCTRL */
+#define SYSTEM_SMC_PMPROT_VALUE        0x20U               /* SMC_PMPROT */
+#define SYSTEM_SMC_PMCTRL_VALUE        0x0U                /* SMC_PMCTRL */
 
-#define DEFAULT_SYSTEM_CLOCK           48000000u            /* Default System clock value */
-#define CPU_INT_SLOW_CLK_HZ            24000000u            /* Value of the slow internal oscillator clock frequency in Hz  */
+#define DEFAULT_SYSTEM_CLOCK           48000000U           /* Default System clock value */
+#define CPU_INT_SLOW_CLK_HZ            24000000U           /* Value of the slow internal oscillator clock frequency in Hz */
+
 
 
 /**

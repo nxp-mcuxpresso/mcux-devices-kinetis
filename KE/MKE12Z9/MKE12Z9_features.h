@@ -1,7 +1,7 @@
 /*
 ** ###################################################################
 **     Version:             rev. 1.0, 2023-03-01
-**     Build:               b250321
+**     Build:               b250411
 **
 **     Abstract:
 **         Chip specific module features.
@@ -117,6 +117,18 @@
 #define FSL_FEATURE_ACMP_HAS_C1_DMODE_BIT (0)
 /* @brief Has C2 RRE Bit */
 #define FSL_FEATURE_ACMP_HAS_C2_RRE_BIT (1)
+/* @brief Has C3 RDIVE Bit */
+#define FSL_FEATURE_ACMP_HAS_C3_RDIVE_BIT (0)
+/* @brief If support round-robin mode */
+#define FSL_FEATURE_ACMP_HAS_NO_ROUNDROBIN_MODE (0)
+/* @brief If support 3v domain */
+#define FSL_FEATURE_ACMP_HAS_NO_3V_DOMAIN (1)
+/* @brief If support window mode */
+#define FSL_FEATURE_ACMP_HAS_NO_WINDOW_MODE (0)
+/* @brief If support filter mode */
+#define FSL_FEATURE_ACMP_HAS_NO_FILTER_MODE (0)
+/* @brief Has No C0 SE Bit */
+#define FSL_FEATURE_ACMP_HAS_NO_C0_SE_BIT (0)
 
 /* CRC module features */
 
@@ -170,12 +182,14 @@
 
 /* FLEXIO module features */
 
+/* @brief Has DOZEN bit(CTRL[DOZEN]) */
+#define FSL_FEATURE_FLEXIO_HAS_DOZE_MODE_SUPPORT (1)
+/* @brief FLEXIO support reset from RSTCTL */
+#define FSL_FEATURE_FLEXIO_HAS_RESET (0)
 /* @brief Has Shifter Status Register (FLEXIO_SHIFTSTAT) */
 #define FSL_FEATURE_FLEXIO_HAS_SHIFTER_STATUS (1)
 /* @brief Has Pin Data Input Register (FLEXIO_PIN) */
 #define FSL_FEATURE_FLEXIO_HAS_PIN_STATUS (1)
-/* @brief Has pin input output related registers */
-#define FSL_FEATURE_FLEXIO_HAS_PIN_REGISTER (0)
 /* @brief Has Shifter Buffer N Nibble Byte Swapped Register (FLEXIO_SHIFTBUFNBSn) */
 #define FSL_FEATURE_FLEXIO_HAS_SHFT_BUFFER_NIBBLE_BYTE_SWAP (0)
 /* @brief Has Shifter Buffer N Half Word Swapped Register (FLEXIO_SHIFTBUFHWSn) */
@@ -192,10 +206,12 @@
 #define FSL_FEATURE_FLEXIO_VERID_RESET_VALUE (0x1010000)
 /* @brief Reset value of the FLEXIO_PARAM register */
 #define FSL_FEATURE_FLEXIO_PARAM_RESET_VALUE (0x4080404)
-/* @brief Represent the bit width of the TIMDCE field (FLEXIO_TIMCFGLn[TIMDEC]) */
-#define FSL_FEATURE_FLEXIO_TIMCFG_TIMDCE_FIELD_WIDTH (2)
 /* @brief Flexio DMA request base channel */
 #define FSL_FEATURE_FLEXIO_DMA_REQUEST_BASE_CHANNEL (0)
+/* @brief Represent the bit width of the TIMDCE field (FLEXIO_TIMCFGLn[TIMDEC]) */
+#define FSL_FEATURE_FLEXIO_TIMCFG_TIMDCE_FIELD_WIDTH (2)
+/* @brief Has pin input output related registers */
+#define FSL_FEATURE_FLEXIO_HAS_PIN_REGISTER (0)
 
 /* FLASH module features */
 
@@ -473,10 +489,10 @@
 
 /* @brief Has separate DMA RX and TX requests. */
 #define FSL_FEATURE_LPI2C_HAS_SEPARATE_DMA_RX_TX_REQn(x) (1)
-/* @brief Has dedicated interrupt for master and slave. */
-#define FSL_FEATURE_LPI2C_HAS_ROLE_SPLIT_IRQ (0)
 /* @brief Capacity (number of entries) of the transmit/receive FIFO (or zero if no FIFO is available). */
 #define FSL_FEATURE_LPI2C_FIFO_SIZEn(x) (4)
+/* @brief Has dedicated interrupt for master and slave. */
+#define FSL_FEATURE_LPI2C_HAS_ROLE_SPLIT_IRQ (0)
 
 /* LPIT module features */
 

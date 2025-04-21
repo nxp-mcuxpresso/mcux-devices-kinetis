@@ -71,9 +71,9 @@ uint32_t SystemCoreClock = DEFAULT_SYSTEM_CLOCK;
    ---------------------------------------------------------------------------- */
 
 void SystemInit (void) {
-
   /* Redirect vector table to Flash, in case of boot from ROM without overwriting FOPT boot option */
   RCM->MR = 3UL << 1U;
+
 
 #if (DISABLE_WDOG)
   if ((WDOG->CS & WDOG_CS_CMD32EN_MASK) != 0U)
@@ -124,7 +124,6 @@ void SystemCoreClockUpdate (void) {
       break;
   }
   SystemCoreClock = (SCGOUTClock / Divider);
-
 }
 
 /* ----------------------------------------------------------------------------

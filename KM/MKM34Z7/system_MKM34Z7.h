@@ -48,7 +48,7 @@
  */
 
 #ifndef _SYSTEM_MKM34Z7_H_
-#define _SYSTEM_MKM34Z7_H_ /**< Symbol preventing repeated inclusion */
+#define _SYSTEM_MKM34Z7_H_                       /**< Symbol preventing repeated inclusion */
 
 #ifdef __cplusplus
 extern "C" {
@@ -56,22 +56,24 @@ extern "C" {
 
 #include <stdint.h>
 
+
 #ifndef DISABLE_WDOG
-#define DISABLE_WDOG 1
+  #define DISABLE_WDOG  1
 #endif
 
 /* Define clock source values */
-
-#define CPU_XTAL_CLK_HZ     8000000u /* Value of the external crystal or oscillator clock frequency in Hz */
-#define CPU_XTAL32k_CLK_HZ  32768u   /* Value of the external 32k crystal or oscillator clock frequency in Hz */
-#define CPU_INT_SLOW_CLK_HZ 32768u   /* Value of the slow internal oscillator clock frequency in Hz  */
-#define CPU_INT_FAST_CLK_HZ 4000000u /* Value of the fast internal oscillator clock frequency in Hz  */
+#define CPU_XTAL_CLK_HZ                8000000U            /* Value of the external crystal or oscillator clock frequency in Hz */
+#define CPU_XTAL32k_CLK_HZ             32768U              /* Value of the external 32k crystal or oscillator clock frequency in Hz */
+#define CPU_INT_SLOW_CLK_HZ            32768U              /* Value of the slow internal oscillator clock frequency in Hz */
+#define CPU_INT_FAST_CLK_HZ            4000000U            /* Value of the fast internal oscillator clock frequency in Hz */
 
 /* Low power mode enable */
 /* SMC_PMPROT: AVLP=1,AVLLS=1 */
-#define SYSTEM_SMC_PMPROT_VALUE 0x22U /* SMC_PMPROT */
+#define SYSTEM_SMC_PMPROT_VALUE        0x22U               /* SMC_PMPROT */
 
-#define DEFAULT_SYSTEM_CLOCK 2000000u /* Default System clock value */
+#define DEFAULT_SYSTEM_CLOCK           2000000U            /* Default System clock value */
+
+
 
 /**
  * @brief System clock frequency (core clock)
@@ -91,7 +93,7 @@ extern uint32_t SystemCoreClock;
  * microcontroller device. For systems with variable clock speed it also updates
  * the variable SystemCoreClock. SystemInit is called from startup_device file.
  */
-void SystemInit(void);
+void SystemInit (void);
 
 /**
  * @brief Updates the SystemCoreClock variable.
@@ -100,7 +102,7 @@ void SystemInit(void);
  * execution. SystemCoreClockUpdate() evaluates the clock register settings and calculates
  * the current core clock.
  */
-void SystemCoreClockUpdate(void);
+void SystemCoreClockUpdate (void);
 
 /**
  * @brief SystemInit function hook.
@@ -112,10 +114,10 @@ void SystemCoreClockUpdate(void);
  * NOTE: No global r/w variables can be used in this hook function because the
  * initialization of these variables happens after this function.
  */
-void SystemInitHook(void);
+void SystemInitHook (void);
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif /* _SYSTEM_MKM34Z7_H_ */
+#endif  /* _SYSTEM_MKM34Z7_H_ */

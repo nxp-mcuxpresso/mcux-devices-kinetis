@@ -15,13 +15,13 @@
 **
 **     Reference manual:    KE1xZP100M72SF1RM, Rev. 1, Jun. 2021
 **     Version:             rev. 3.0, 2021-10-08
-**     Build:               b240715
+**     Build:               b250414
 **
 **     Abstract:
 **         CMSIS Peripheral Access Layer for MKE12Z7
 **
 **     Copyright 1997-2016 Freescale Semiconductor, Inc.
-**     Copyright 2016-2024 NXP
+**     Copyright 2016-2025 NXP
 **     SPDX-License-Identifier: BSD-3-Clause
 **
 **     http:                 www.nxp.com
@@ -138,14 +138,14 @@ typedef enum IRQn {
 #include "core_cm0plus.h"              /* Core Peripheral Access Layer */
 #include "system_MKE12Z7.h"            /* Device specific configuration file */
 
-#define MKE12Z7_SERIES
-/* CPU specific feature definitions */
-#include "MKE12Z7_features.h"
-
 /*!
  * @}
  */ /* end of group Cortex_Core_Configuration */
 
+
+#define MKE12Z7_SERIES
+/* CPU specific feature definitions */
+#include "MKE12Z7_features.h"
 
 /* ADC - Peripheral instance base addresses */
 /** Peripheral ADC0 base address */

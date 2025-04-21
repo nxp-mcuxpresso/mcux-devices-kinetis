@@ -10,13 +10,13 @@
 **                          MKE15Z256VLL7
 **
 **     Version:             rev. 6.0, 2016-09-20
-**     Build:               b240715
+**     Build:               b250414
 **
 **     Abstract:
 **         CMSIS Peripheral Access Layer for FGPIO
 **
 **     Copyright 1997-2016 Freescale Semiconductor, Inc.
-**     Copyright 2016-2024 NXP
+**     Copyright 2016-2025 NXP
 **     SPDX-License-Identifier: BSD-3-Clause
 **
 **     http:                 www.nxp.com
@@ -40,7 +40,7 @@
 */
 
 /*!
- * @file FGPIO.h
+ * @file PERI_FGPIO.h
  * @version 6.0
  * @date 2016-09-20
  * @brief CMSIS Peripheral Access Layer for FGPIO
@@ -48,8 +48,8 @@
  * CMSIS Peripheral Access Layer for FGPIO
  */
 
-#if !defined(FGPIO_H_)
-#define FGPIO_H_                                 /**< Symbol preventing repeated inclusion */
+#if !defined(PERI_FGPIO_H_)
+#define PERI_FGPIO_H_                            /**< Symbol preventing repeated inclusion */
 
 #if (defined(CPU_MKE14Z128VLH7) || defined(CPU_MKE14Z128VLL7) || defined(CPU_MKE14Z256VLH7) || defined(CPU_MKE14Z256VLL7))
 #include "MKE14Z7_COMMON.h"
@@ -103,9 +103,9 @@
 /** FGPIO - Register Layout Typedef */
 typedef struct {
   __IO uint32_t PDOR;                              /**< Port Data Output Register, offset: 0x0 */
-  __O  uint32_t PSOR;                              /**< Port Set Output Register, offset: 0x4 */
-  __O  uint32_t PCOR;                              /**< Port Clear Output Register, offset: 0x8 */
-  __O  uint32_t PTOR;                              /**< Port Toggle Output Register, offset: 0xC */
+  __IO uint32_t PSOR;                              /**< Port Set Output Register, offset: 0x4 */
+  __IO uint32_t PCOR;                              /**< Port Clear Output Register, offset: 0x8 */
+  __IO uint32_t PTOR;                              /**< Port Toggle Output Register, offset: 0xC */
   __I  uint32_t PDIR;                              /**< Port Data Input Register, offset: 0x10 */
   __IO uint32_t PDDR;                              /**< Port Data Direction Register, offset: 0x14 */
 } FGPIO_Type;
@@ -227,5 +227,5 @@ typedef struct {
  */ /* end of group Peripheral_access_layer */
 
 
-#endif  /* FGPIO_H_ */
+#endif  /* PERI_FGPIO_H_ */
 

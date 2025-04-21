@@ -68,16 +68,15 @@ extern "C" {
 
 
 #ifndef DISABLE_WDOG
-  #define DISABLE_WDOG                 1
+  #define DISABLE_WDOG  1
 #endif
 
 /* Define clock source values */
-
-#define CPU_XTAL_CLK_HZ                8000000u            /* Value of the external crystal or oscillator clock frequency in Hz */
-#define CPU_XTAL32k_CLK_HZ             0u                  /* No RTC clock available */
-#define CPU_INT_SLOW_CLK_HZ            32768u              /* Value of the slow internal oscillator clock frequency in Hz  */
-#define CPU_INT_FAST_CLK_HZ            4000000u            /* Value of the fast internal oscillator clock frequency in Hz  */
-#define CPU_INT_IRC_CLK_HZ             48000000u           /* Value of the 48M internal oscillator clock frequency in Hz  */
+#define CPU_XTAL_CLK_HZ                8000000U            /* Value of the external crystal or oscillator clock frequency in Hz */
+#define CPU_XTAL32k_CLK_HZ             0U                  /* No RTC clock available */
+#define CPU_INT_SLOW_CLK_HZ            32768U              /* Value of the slow internal oscillator clock frequency in Hz */
+#define CPU_INT_FAST_CLK_HZ            4000000U            /* Value of the fast internal oscillator clock frequency in Hz */
+#define CPU_INT_IRC_CLK_HZ             48000000U           /* Value of the 48M internal oscillator clock frequency in Hz */
 
 /* RTC oscillator setting */
 
@@ -85,7 +84,8 @@ extern "C" {
 /* SMC_PMPROT: AHSRUN=1,AVLP=1,ALLS=1,AVLLS=1 */
 #define SYSTEM_SMC_PMPROT_VALUE        0xAAU               /* SMC_PMPROT */
 
-#define DEFAULT_SYSTEM_CLOCK           20971520u           /* Default System clock value */
+#define DEFAULT_SYSTEM_CLOCK           20971520U           /* Default System clock value */
+
 
 
 /**

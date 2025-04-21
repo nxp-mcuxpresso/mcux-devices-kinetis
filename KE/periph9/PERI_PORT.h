@@ -8,13 +8,13 @@
 **                          MKE17Z512VLL9
 **
 **     Version:             rev. 2.0, 2023-10-08
-**     Build:               b240715
+**     Build:               b250414
 **
 **     Abstract:
 **         CMSIS Peripheral Access Layer for PORT
 **
 **     Copyright 1997-2016 Freescale Semiconductor, Inc.
-**     Copyright 2016-2024 NXP
+**     Copyright 2016-2025 NXP
 **     SPDX-License-Identifier: BSD-3-Clause
 **
 **     http:                 www.nxp.com
@@ -30,7 +30,7 @@
 */
 
 /*!
- * @file PORT.h
+ * @file PERI_PORT.h
  * @version 2.0
  * @date 2023-10-08
  * @brief CMSIS Peripheral Access Layer for PORT
@@ -38,8 +38,8 @@
  * CMSIS Peripheral Access Layer for PORT
  */
 
-#if !defined(PORT_H_)
-#define PORT_H_                                  /**< Symbol preventing repeated inclusion */
+#if !defined(PERI_PORT_H_)
+#define PERI_PORT_H_                             /**< Symbol preventing repeated inclusion */
 
 #if (defined(CPU_MKE12Z512VLH9) || defined(CPU_MKE12Z512VLL9))
 #include "MKE12Z9_COMMON.h"
@@ -98,8 +98,8 @@
 /** PORT - Register Layout Typedef */
 typedef struct {
   __IO uint32_t PCR[PORT_PCR_COUNT];               /**< Pin Control Register n, array offset: 0x0, array step: 0x4 */
-  __O  uint32_t GPCLR;                             /**< Global Pin Control Low Register, offset: 0x80 */
-  __O  uint32_t GPCHR;                             /**< Global Pin Control High Register, offset: 0x84 */
+  __IO uint32_t GPCLR;                             /**< Global Pin Control Low Register, offset: 0x80 */
+  __IO uint32_t GPCHR;                             /**< Global Pin Control High Register, offset: 0x84 */
        uint8_t RESERVED_0[24];
   __IO uint32_t ISFR;                              /**< Interrupt Status Flag Register, offset: 0xA0 */
        uint8_t RESERVED_1[28];
@@ -329,5 +329,5 @@ typedef struct {
  */ /* end of group Peripheral_access_layer */
 
 
-#endif  /* PORT_H_ */
+#endif  /* PERI_PORT_H_ */
 

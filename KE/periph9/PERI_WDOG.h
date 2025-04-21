@@ -8,13 +8,13 @@
 **                          MKE17Z512VLL9
 **
 **     Version:             rev. 2.0, 2023-10-08
-**     Build:               b240715
+**     Build:               b250414
 **
 **     Abstract:
 **         CMSIS Peripheral Access Layer for WDOG
 **
 **     Copyright 1997-2016 Freescale Semiconductor, Inc.
-**     Copyright 2016-2024 NXP
+**     Copyright 2016-2025 NXP
 **     SPDX-License-Identifier: BSD-3-Clause
 **
 **     http:                 www.nxp.com
@@ -30,7 +30,7 @@
 */
 
 /*!
- * @file WDOG.h
+ * @file PERI_WDOG.h
  * @version 2.0
  * @date 2023-10-08
  * @brief CMSIS Peripheral Access Layer for WDOG
@@ -38,8 +38,8 @@
  * CMSIS Peripheral Access Layer for WDOG
  */
 
-#if !defined(WDOG_H_)
-#define WDOG_H_                                  /**< Symbol preventing repeated inclusion */
+#if !defined(PERI_WDOG_H_)
+#define PERI_WDOG_H_                             /**< Symbol preventing repeated inclusion */
 
 #if (defined(CPU_MKE12Z512VLH9) || defined(CPU_MKE12Z512VLL9))
 #include "MKE12Z9_COMMON.h"
@@ -310,5 +310,5 @@ typedef struct {
  */ /* end of group Peripheral_access_layer */
 
 
-#endif  /* WDOG_H_ */
+#endif  /* PERI_WDOG_H_ */
 
