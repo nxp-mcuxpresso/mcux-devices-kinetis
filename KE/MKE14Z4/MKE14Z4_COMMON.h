@@ -143,7 +143,9 @@ typedef enum IRQn {
  */ /* end of group Cortex_Core_Configuration */
 
 
+#ifndef MKE14Z4_SERIES
 #define MKE14Z4_SERIES
+#endif
 /* CPU specific feature definitions */
 #include "MKE14Z4_features.h"
 
@@ -611,4 +613,3 @@ typedef enum IRQn {
 
 
 #endif  /* MKE14Z4_COMMON_H_ */
-

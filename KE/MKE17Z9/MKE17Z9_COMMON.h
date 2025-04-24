@@ -137,7 +137,9 @@ typedef enum IRQn {
  */ /* end of group Cortex_Core_Configuration */
 
 
+#ifndef MKE17Z9_SERIES
 #define MKE17Z9_SERIES
+#endif
 /* CPU specific feature definitions */
 #include "MKE17Z9_features.h"
 
@@ -660,4 +662,3 @@ typedef enum IRQn {
 
 
 #endif  /* MKE17Z9_COMMON_H_ */
-

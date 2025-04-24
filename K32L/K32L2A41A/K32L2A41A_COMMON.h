@@ -167,7 +167,9 @@ typedef enum IRQn {
  */ /* end of group Cortex_Core_Configuration */
 
 
+#ifndef K32L2A41A_SERIES
 #define K32L2A41A_SERIES
+#endif
 /* CPU specific feature definitions */
 #include "K32L2A41A_features.h"
 
@@ -802,4 +804,3 @@ typedef enum IRQn {
 
 
 #endif  /* K32L2A41A_COMMON_H_ */
-

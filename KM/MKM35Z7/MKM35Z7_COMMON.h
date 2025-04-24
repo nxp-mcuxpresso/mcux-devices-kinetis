@@ -138,7 +138,9 @@ typedef enum IRQn {
 #include "core_cm0plus.h"              /* Core Peripheral Access Layer */
 #include "system_MKM35Z7.h"            /* Device specific configuration file */
 
+#ifndef MKM35Z7_SERIES
 #define MKM35Z7_SERIES
+#endif
 /* CPU specific feature definitions */
 #include "MKM35Z7_features.h"
 
@@ -857,4 +859,3 @@ typedef enum IRQn {
 
 
 #endif  /* MKM35Z7_COMMON_H_ */
-

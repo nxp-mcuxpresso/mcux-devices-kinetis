@@ -226,7 +226,9 @@ typedef enum IRQn {
 #include "core_cm4.h"                  /* Core Peripheral Access Layer */
 #include "system_MK02F12810.h"         /* Device specific configuration file */
 
+#ifndef MK02F12810_SERIES
 #define MK02F12810_SERIES
+#endif
 /* CPU specific feature definitions */
 #include "MK02F12810_features.h"
 
@@ -711,4 +713,3 @@ typedef enum IRQn {
 
 
 #endif  /* MK02F12810_COMMON_H_ */
-

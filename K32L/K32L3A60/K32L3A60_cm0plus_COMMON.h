@@ -164,7 +164,9 @@ typedef enum IRQn {
  */ /* end of group Cortex_Core_Configuration */
 
 
+#ifndef K32L3A60_cm0plus_SERIES
 #define K32L3A60_cm0plus_SERIES
+#endif
 /* CPU specific feature definitions */
 #include "K32L3A60_cm0plus_features.h"
 
@@ -897,4 +899,3 @@ typedef enum _mu_power_mode
 
 
 #endif  /* K32L3A60_CM0PLUS_COMMON_H_ */
-
