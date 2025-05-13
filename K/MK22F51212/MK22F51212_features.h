@@ -1,7 +1,7 @@
 /*
 ** ###################################################################
 **     Version:             rev. 2.15, 2016-03-21
-**     Build:               b250324
+**     Build:               b250506
 **
 **     Abstract:
 **         Chip specific module features.
@@ -643,6 +643,8 @@
 #define FSL_FEATURE_SAI_HAS_MCR_MCLK_POST_DIV (0)
 /* @brief Support Channel Mode (register bit fields TCR4[CHMOD]). */
 #define FSL_FEATURE_SAI_HAS_CHANNEL_MODE (0)
+/* @brief Has Bit Clock Swap option (register bit fields RCR2[BCS]) */
+#define FSL_FEATURE_SAI_HAS_BIT_CLOCK_SWAP (1)
 
 /* LLWU module features */
 
@@ -1358,8 +1360,6 @@
 
 /* LPUART module features */
 
-/* @brief LPUART0 and LPUART1 has shared interrupt vector. */
-#define FSL_FEATURE_LPUART_HAS_SHARED_IRQ0_IRQ1 (0)
 /* @brief Has receive FIFO overflow detection (bit field CFIFO[RXOFE]). */
 #define FSL_FEATURE_LPUART_HAS_IRQ_EXTENDED_FUNCTIONS (0)
 /* @brief Has low power features (can be enabled in wait mode via register bit C1[DOZEEN] or CTRL[DOZEEN] if the registers are 32-bit wide). */
@@ -1424,6 +1424,8 @@
 #define FSL_FEATURE_LPUART_HAS_GLOBAL (0)
 /* @brief Has LPUART_PINCFG. */
 #define FSL_FEATURE_LPUART_HAS_PINCFG (0)
+/* @brief Belong to LPFLEXCOMM */
+#define FSL_FEATURE_LPUART_IS_LPFLEXCOMM (0)
 /* @brief Has register MODEM Control. */
 #define FSL_FEATURE_LPUART_HAS_MCR (0)
 /* @brief Has register Half Duplex Control. */
@@ -1432,6 +1434,8 @@
 #define FSL_FEATURE_LPUART_HAS_TIMEOUT (0)
 /* @brief UART support swap TX and RX (has bit CTRL[SWAP]). */
 #define FSL_FEATURE_LPUART_HAS_CTRL_SWAP (0)
+/* @brief LPUART0 and LPUART1 has shared interrupt vector. */
+#define FSL_FEATURE_LPUART_HAS_SHARED_IRQ0_IRQ1 (0)
 
 /* MCG module features */
 
