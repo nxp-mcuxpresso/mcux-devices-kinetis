@@ -12,8 +12,8 @@
 **                          MCUXpresso Compiler
 **
 **     Reference manual:    KE1xZP100M72SF0RM, Rev. 2, Aug. 2016
-**     Version:             rev. 6.0, 2016-09-20
-**     Build:               b250414
+**     Version:             rev. 7.0, 2024-10-29
+**     Build:               b250520
 **
 **     Abstract:
 **         CMSIS Peripheral Access Layer for MKE14Z7
@@ -38,14 +38,17 @@
 **         Based on rev1.x RDP.
 **     - rev. 6.0 (2016-09-20)
 **         Based on rev2 RDP.
+**     - rev. 7.0 (2024-10-29)
+**         Change the device header file from single flat file to multiple files based on peripherals,
+**         each peripheral with dedicated header file located in periphN folder.
 **
 ** ###################################################################
 */
 
 /*!
  * @file MKE14Z7_COMMON.h
- * @version 6.0
- * @date 2016-09-20
+ * @version 7.0
+ * @date 2024-10-29
  * @brief CMSIS Peripheral Access Layer for MKE14Z7
  *
  * CMSIS Peripheral Access Layer for MKE14Z7
@@ -56,7 +59,7 @@
 
 /** Memory map major version (memory maps with equal major version number are
  * compatible) */
-#define MCU_MEM_MAP_VERSION 0x0600U
+#define MCU_MEM_MAP_VERSION 0x0700U
 /** Memory map minor version */
 #define MCU_MEM_MAP_VERSION_MINOR 0x0000U
 
@@ -685,3 +688,4 @@ typedef enum IRQn {
 
 
 #endif  /* MKE14Z7_COMMON_H_ */
+

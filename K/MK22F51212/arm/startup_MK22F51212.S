@@ -2,13 +2,13 @@
 /*  @file:    startup_MK22F51212.s                                           */
 /*  @purpose: CMSIS Cortex-M4 Core Device Startup File                       */
 /*            MK22F51212                                                     */
-/*  @version: 2.9                                                            */
-/*  @date:    2016-3-21                                                      */
-/*  @build:   b240709                                                        */
+/*  @version: 3.0                                                            */
+/*  @date:    2024-10-29                                                     */
+/*  @build:   b250520                                                        */
 /* ------------------------------------------------------------------------- */
 /*                                                                           */
 /* Copyright 1997-2016 Freescale Semiconductor, Inc.                         */
-/* Copyright 2016-2024 NXP                                                   */
+/* Copyright 2016-2025 NXP                                                   */
 /* SPDX-License-Identifier: BSD-3-Clause                                     */
 /*****************************************************************************/
 /* Version: GCC for ARM Embedded Processors                                  */

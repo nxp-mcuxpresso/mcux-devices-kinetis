@@ -2,13 +2,13 @@
 ;  @file:    startup_K32L3A60_cm0plus.s
 ;  @purpose: CMSIS Cortex-M0P Core Device Startup File
 ;            K32L3A60_cm0plus
-;  @version: 1.0
-;  @date:    2019-4-22
-;  @build:   b240709
+;  @version: 2.0
+;  @date:    2024-10-29
+;  @build:   b250520
 ; -------------------------------------------------------------------------
 ;
 ; Copyright 1997-2016 Freescale Semiconductor, Inc.
-; Copyright 2016-2024 NXP
+; Copyright 2016-2025 NXP
 ; SPDX-License-Identifier: BSD-3-Clause
 ;
 ; The modules in this file are included in the libraries, and may be replaced

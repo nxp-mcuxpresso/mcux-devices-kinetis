@@ -10,8 +10,8 @@
 **                          MCUXpresso Compiler
 **
 **     Reference manual:    K32L2AxRM, Rev. 1, 12/2019
-**     Version:             rev. 1.0, 2019-10-30
-**     Build:               b250414
+**     Version:             rev. 2.0, 2024-10-29
+**     Build:               b250520
 **
 **     Abstract:
 **         CMSIS Peripheral Access Layer for K32L2A31A
@@ -26,14 +26,17 @@
 **     Revisions:
 **     - rev. 1.0 (2019-10-30)
 **         Initial version.
+**     - rev. 2.0 (2024-10-29)
+**         Change the device header file from single flat file to multiple files based on peripherals,
+**         each peripheral with dedicated header file located in periphN folder.
 **
 ** ###################################################################
 */
 
 /*!
  * @file K32L2A31A_COMMON.h
- * @version 1.0
- * @date 2019-10-30
+ * @version 2.0
+ * @date 2024-10-29
  * @brief CMSIS Peripheral Access Layer for K32L2A31A
  *
  * CMSIS Peripheral Access Layer for K32L2A31A
@@ -44,7 +47,7 @@
 
 /** Memory map major version (memory maps with equal major version number are
  * compatible) */
-#define MCU_MEM_MAP_VERSION 0x0100U
+#define MCU_MEM_MAP_VERSION 0x0200U
 /** Memory map minor version */
 #define MCU_MEM_MAP_VERSION_MINOR 0x0000U
 
@@ -804,3 +807,4 @@ typedef enum IRQn {
 
 
 #endif  /* K32L2A31A_COMMON_H_ */
+

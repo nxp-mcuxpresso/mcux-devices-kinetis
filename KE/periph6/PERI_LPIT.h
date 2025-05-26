@@ -9,8 +9,8 @@
 **                          MKE15Z256VLH7
 **                          MKE15Z256VLL7
 **
-**     Version:             rev. 6.0, 2016-09-20
-**     Build:               b250414
+**     Version:             rev. 7.0, 2024-10-29
+**     Build:               b250520
 **
 **     Abstract:
 **         CMSIS Peripheral Access Layer for LPIT
@@ -35,14 +35,17 @@
 **         Based on rev1.x RDP.
 **     - rev. 6.0 (2016-09-20)
 **         Based on rev2 RDP.
+**     - rev. 7.0 (2024-10-29)
+**         Change the device header file from single flat file to multiple files based on peripherals,
+**         each peripheral with dedicated header file located in periphN folder.
 **
 ** ###################################################################
 */
 
 /*!
  * @file PERI_LPIT.h
- * @version 6.0
- * @date 2016-09-20
+ * @version 7.0
+ * @date 2024-10-29
  * @brief CMSIS Peripheral Access Layer for LPIT
  *
  * CMSIS Peripheral Access Layer for LPIT

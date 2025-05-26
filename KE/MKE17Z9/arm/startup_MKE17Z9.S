@@ -2,13 +2,13 @@
 /*  @file:    startup_MKE17Z9.s                                              */
 /*  @purpose: CMSIS Cortex-M0P Core Device Startup File                      */
 /*            MKE17Z9                                                        */
-/*  @version: 2.0                                                            */
-/*  @date:    2023-10-8                                                      */
-/*  @build:   b240715                                                        */
+/*  @version: 3.0                                                            */
+/*  @date:    2024-10-29                                                     */
+/*  @build:   b250520                                                        */
 /* ------------------------------------------------------------------------- */
 /*                                                                           */
 /* Copyright 1997-2016 Freescale Semiconductor, Inc.                         */
-/* Copyright 2016-2024 NXP                                                   */
+/* Copyright 2016-2025 NXP                                                   */
 /* SPDX-License-Identifier: BSD-3-Clause                                     */
 /*****************************************************************************/
 /* Version: GCC for ARM Embedded Processors                                  */

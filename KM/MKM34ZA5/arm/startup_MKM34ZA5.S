@@ -2,13 +2,13 @@
 /*  @file:    startup_MKM34ZA5.s                                             */
 /*  @purpose: CMSIS Cortex-M0P Core Device Startup File                      */
 /*            MKM34ZA5                                                       */
-/*  @version: 1.0                                                            */
-/*  @date:    2014-7-22                                                      */
-/*  @build:   b240710                                                        */
+/*  @version: 2.0                                                            */
+/*  @date:    2024-10-29                                                     */
+/*  @build:   b250520                                                        */
 /* ------------------------------------------------------------------------- */
 /*                                                                           */
 /* Copyright 1997-2016 Freescale Semiconductor, Inc.                         */
-/* Copyright 2016-2024 NXP                                                   */
+/* Copyright 2016-2025 NXP                                                   */
 /* SPDX-License-Identifier: BSD-3-Clause                                     */
 /*****************************************************************************/
 /* Version: GCC for ARM Embedded Processors                                  */

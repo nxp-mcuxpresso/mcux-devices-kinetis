@@ -2,13 +2,13 @@
 ;  @file:    startup_MK22F12810.s
 ;  @purpose: CMSIS Cortex-M4 Core Device Startup File
 ;            MK22F12810
-;  @version: 1.6
-;  @date:    2015-2-19
-;  @build:   b240709
+;  @version: 2.0
+;  @date:    2024-10-29
+;  @build:   b250520
 ; -------------------------------------------------------------------------
 ;
 ; Copyright 1997-2016 Freescale Semiconductor, Inc.
-; Copyright 2016-2024 NXP
+; Copyright 2016-2025 NXP
 ; SPDX-License-Identifier: BSD-3-Clause
 ;
 ; The modules in this file are included in the libraries, and may be replaced

@@ -7,8 +7,8 @@
 **                          MKE17Z512VLH9
 **                          MKE17Z512VLL9
 **
-**     Version:             rev. 2.0, 2023-10-08
-**     Build:               b250414
+**     Version:             rev. 3.0, 2024-10-29
+**     Build:               b250520
 **
 **     Abstract:
 **         CMSIS Peripheral Access Layer for FLEXIO
@@ -25,14 +25,17 @@
 **         Initial version.
 **     - rev. 2.0 (2023-10-08)
 **         Based on Rev.1 RM.
+**     - rev. 3.0 (2024-10-29)
+**         Change the device header file from single flat file to multiple files based on peripherals,
+**         each peripheral with dedicated header file located in periphN folder.
 **
 ** ###################################################################
 */
 
 /*!
  * @file PERI_FLEXIO.h
- * @version 2.0
- * @date 2023-10-08
+ * @version 3.0
+ * @date 2024-10-29
  * @brief CMSIS Peripheral Access Layer for FLEXIO
  *
  * CMSIS Peripheral Access Layer for FLEXIO
@@ -254,8 +257,8 @@ typedef struct {
 /*! SSF - Shifter Status Flag
  *  0b0000..Clear
  *  0b0000..No effect
- *  0b0001..Set
  *  0b0001..Clear the flag
+ *  0b0001..Set
  */
 #define FLEXIO_SHIFTSTAT_SSF(x)                  (((uint32_t)(((uint32_t)(x)) << FLEXIO_SHIFTSTAT_SSF_SHIFT)) & FLEXIO_SHIFTSTAT_SSF_MASK)
 /*! @} */
@@ -268,8 +271,8 @@ typedef struct {
 /*! SEF - Shifter Error Flag
  *  0b0000..Clear
  *  0b0000..No effect
- *  0b0001..Set
  *  0b0001..Clear the flag
+ *  0b0001..Set
  */
 #define FLEXIO_SHIFTERR_SEF(x)                   (((uint32_t)(((uint32_t)(x)) << FLEXIO_SHIFTERR_SEF_SHIFT)) & FLEXIO_SHIFTERR_SEF_MASK)
 /*! @} */
@@ -282,8 +285,8 @@ typedef struct {
 /*! TSF - Timer Status Flag
  *  0b0000..Clear
  *  0b0000..No effect
- *  0b0001..Set
  *  0b0001..Clear the flag
+ *  0b0001..Set
  */
 #define FLEXIO_TIMSTAT_TSF(x)                    (((uint32_t)(((uint32_t)(x)) << FLEXIO_TIMSTAT_TSF_SHIFT)) & FLEXIO_TIMSTAT_TSF_MASK)
 /*! @} */

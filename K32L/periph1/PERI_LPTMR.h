@@ -5,8 +5,8 @@
 **                          K32L2A41VLH1A
 **                          K32L2A41VLL1A
 **
-**     Version:             rev. 1.0, 2019-10-30
-**     Build:               b250414
+**     Version:             rev. 2.0, 2024-10-29
+**     Build:               b250520
 **
 **     Abstract:
 **         CMSIS Peripheral Access Layer for LPTMR
@@ -21,14 +21,17 @@
 **     Revisions:
 **     - rev. 1.0 (2019-10-30)
 **         Initial version.
+**     - rev. 2.0 (2024-10-29)
+**         Change the device header file from single flat file to multiple files based on peripherals,
+**         each peripheral with dedicated header file located in periphN folder.
 **
 ** ###################################################################
 */
 
 /*!
  * @file PERI_LPTMR.h
- * @version 1.0
- * @date 2019-10-30
+ * @version 2.0
+ * @date 2024-10-29
  * @brief CMSIS Peripheral Access Layer for LPTMR
  *
  * CMSIS Peripheral Access Layer for LPTMR
