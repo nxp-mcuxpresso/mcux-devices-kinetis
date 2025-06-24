@@ -1,7 +1,7 @@
 /*
 ** ###################################################################
 **     Version:             rev. 1.0, 2018-05-09
-**     Build:               b250428
+**     Build:               b250623
 **
 **     Abstract:
 **         Chip specific module features.
@@ -704,6 +704,8 @@
 #define FSL_FEATURE_LPUART_HAS_TIMEOUT (0)
 /* @brief UART support swap TX and RX (has bit CTRL[SWAP]). */
 #define FSL_FEATURE_LPUART_HAS_CTRL_SWAP (0)
+/* @brief UART support receive rts configuration (has bit MODIR[RTSWATER]). */
+#define FSL_FEATURE_LPUART_HAS_MODIR_RTSWATER (1)
 
 /* MMDVSQ module features */
 
@@ -994,6 +996,8 @@
 #define FSL_FEATURE_SMC_HAS_SRS_SECVIO (0)
 /* @brief Width of SMC registers. */
 #define FSL_FEATURE_SMC_REG_WIDTH (32)
+/* @brief Is affected by errata with ID 011063 (SMC: An asynchronous wakeup event during VLPS mode entry may result in possible system hang scenario). */
+#define FSL_FEATURE_SMC_HAS_ERRATA_011063 (0)
 
 /* SysTick module features */
 

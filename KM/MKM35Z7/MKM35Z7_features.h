@@ -1,7 +1,7 @@
 /*
 ** ###################################################################
 **     Version:             rev. 1.0, 2019-08-01
-**     Build:               b250428
+**     Build:               b250623
 **
 **     Abstract:
 **         Chip specific module features.
@@ -1198,6 +1198,8 @@
 #define FSL_FEATURE_LPUART_HAS_TIMEOUT (0)
 /* @brief UART support swap TX and RX (has bit CTRL[SWAP]). */
 #define FSL_FEATURE_LPUART_HAS_CTRL_SWAP (0)
+/* @brief UART support receive rts configuration (has bit MODIR[RTSWATER]). */
+#define FSL_FEATURE_LPUART_HAS_MODIR_RTSWATER (1)
 /* @brief LPUART0 and LPUART1 has shared interrupt vector. */
 #define FSL_FEATURE_LPUART_HAS_SHARED_IRQ0_IRQ1 (0)
 

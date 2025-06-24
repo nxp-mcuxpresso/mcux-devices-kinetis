@@ -1,7 +1,7 @@
 /*
 ** ###################################################################
 **     Version:             rev. 1.0, 2023-03-01
-**     Build:               b250514
+**     Build:               b250623
 **
 **     Abstract:
 **         Chip specific module features.
@@ -481,6 +481,8 @@
     (((x) == FTM0) ? (4) : \
     (((x) == FTM1) ? (0) : \
     (((x) == FTM2) ? (0) : (-1))))
+/* @brief Is affected by errata with ID 010856 (FTM: Safe state is not removed from channel outputs after fault condition ends if SWOCTRL is being used to control the pin). */
+#define FSL_FEATURE_FTM_HAS_ERRATA_010856 (0)
 
 /* GPIO module features */
 
@@ -613,6 +615,8 @@
 #define FSL_FEATURE_LPUART_HAS_TIMEOUT (0)
 /* @brief UART support swap TX and RX (has bit CTRL[SWAP]). */
 #define FSL_FEATURE_LPUART_HAS_CTRL_SWAP (0)
+/* @brief UART support receive rts configuration (has bit MODIR[RTSWATER]). */
+#define FSL_FEATURE_LPUART_HAS_MODIR_RTSWATER (1)
 
 /* interrupt module features */
 
@@ -762,6 +766,8 @@
 #define FSL_FEATURE_RTC_HAS_PCR (0)
 /* @brief Has Oscillator Enable(bitfield CR[OSCE]). */
 #define FSL_FEATURE_RTC_HAS_NO_CR_OSCE (1)
+/* @brief Is affected by errata with ID 010716 (RTC: Timer Alarm Flag can assert erroneously). */
+#define FSL_FEATURE_RTC_HAS_ERRATA_010716 (0)
 
 /* SCG module features */
 
@@ -894,6 +900,8 @@
 #define FSL_FEATURE_SMC_HAS_SRS_SECVIO (0)
 /* @brief Width of SMC registers. */
 #define FSL_FEATURE_SMC_REG_WIDTH (32)
+/* @brief Is affected by errata with ID 011063 (SMC: An asynchronous wakeup event during VLPS mode entry may result in possible system hang scenario). */
+#define FSL_FEATURE_SMC_HAS_ERRATA_011063 (0)
 
 /* SysTick module features */
 
