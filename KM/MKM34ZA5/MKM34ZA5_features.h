@@ -1,7 +1,7 @@
 /*
 ** ###################################################################
 **     Version:             rev. 1.3, 2015-05-25
-**     Build:               b250603
+**     Build:               b250801
 **
 **     Abstract:
 **         Chip specific module features.
@@ -781,6 +781,8 @@
 #define FSL_FEATURE_PIT_HAS_SHARED_IRQ_HANDLER (1)
 /* @brief Has timer enable control. */
 #define FSL_FEATURE_PIT_HAS_MDIS (1)
+/* @brief Has ERRATA 7914. */
+#define FSL_FEATURE_PIT_HAS_ERRATA_7914 (0)
 
 /* PMC module features */
 

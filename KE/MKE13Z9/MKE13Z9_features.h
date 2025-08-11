@@ -1,7 +1,7 @@
 /*
 ** ###################################################################
 **     Version:             rev. 1.0, 2023-03-01
-**     Build:               b250623
+**     Build:               b250811
 **
 **     Abstract:
 **         Chip specific module features.
@@ -184,8 +184,6 @@
 
 /* FLEXIO module features */
 
-/* @brief Has DOZEN bit(CTRL[DOZEN]) */
-#define FSL_FEATURE_FLEXIO_HAS_DOZE_MODE_SUPPORT (1)
 /* @brief FLEXIO support reset from RSTCTL */
 #define FSL_FEATURE_FLEXIO_HAS_RESET (0)
 /* @brief Has Shifter Status Register (FLEXIO_SHIFTSTAT) */
@@ -214,6 +212,8 @@
 #define FSL_FEATURE_FLEXIO_TIMCFG_TIMDCE_FIELD_WIDTH (2)
 /* @brief Has pin input output related registers */
 #define FSL_FEATURE_FLEXIO_HAS_PIN_REGISTER (0)
+/* @brief Has DOZEN bit(CTRL[DOZEN]) */
+#define FSL_FEATURE_FLEXIO_HAS_DOZE_MODE_SUPPORT (1)
 
 /* FLASH module features */
 
@@ -571,8 +571,6 @@
 #define FSL_FEATURE_LPUART_HAS_BOTH_EDGE_SAMPLING_SUPPORT (1)
 /* @brief Peripheral type. */
 #define FSL_FEATURE_LPUART_IS_SCI (1)
-/* @brief Capacity (number of entries) of the transmit/receive FIFO (or zero if no FIFO is available). */
-#define FSL_FEATURE_LPUART_FIFO_SIZEn(x) (4)
 /* @brief Supports two match addresses to filter incoming frames. */
 #define FSL_FEATURE_LPUART_HAS_ADDRESS_MATCHING (1)
 /* @brief Has transmitter/receiver DMA enable bits C5[TDMAE]/C5[RDMAE] (or BAUD[TDMAE]/BAUD[RDMAE] if the registers are 32-bit wide). */
@@ -615,6 +613,8 @@
 #define FSL_FEATURE_LPUART_HAS_TIMEOUT (0)
 /* @brief UART support swap TX and RX (has bit CTRL[SWAP]). */
 #define FSL_FEATURE_LPUART_HAS_CTRL_SWAP (0)
+/* @brief Capacity (number of entries) of the transmit/receive FIFO (or zero if no FIFO is available). */
+#define FSL_FEATURE_LPUART_FIFO_SIZEn(x) (4)
 /* @brief UART support receive rts configuration (has bit MODIR[RTSWATER]). */
 #define FSL_FEATURE_LPUART_HAS_MODIR_RTSWATER (1)
 
@@ -768,6 +768,8 @@
 #define FSL_FEATURE_RTC_HAS_NO_CR_OSCE (1)
 /* @brief Is affected by errata with ID 010716 (RTC: Timer Alarm Flag can assert erroneously). */
 #define FSL_FEATURE_RTC_HAS_ERRATA_010716 (0)
+/* @brief Has clock output (bitfield CR[CLKO]). */
+#define FSL_FEATURE_RTC_HAS_CLOCK_OUTPUT (1)
 
 /* SCG module features */
 
