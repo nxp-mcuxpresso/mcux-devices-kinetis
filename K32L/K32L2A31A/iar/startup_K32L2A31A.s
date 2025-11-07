@@ -2,9 +2,9 @@
 ;  @file:    startup_K32L2A31A.s
 ;  @purpose: CMSIS Cortex-M0P Core Device Startup File
 ;            K32L2A31A
-;  @version: 2.0
-;  @date:    2024-10-29
-;  @build:   b250520
+;  @version: 2.1
+;  @date:    2025-11-10
+;  @build:   b251110
 ; -------------------------------------------------------------------------
 ;
 ; Copyright 1997-2016 Freescale Semiconductor, Inc.

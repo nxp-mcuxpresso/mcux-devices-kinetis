@@ -2,9 +2,9 @@
 /*  @file:    startup_MKE13Z9.s                                              */
 /*  @purpose: CMSIS Cortex-M0P Core Device Startup File                      */
 /*            MKE13Z9                                                        */
-/*  @version: 3.0                                                            */
-/*  @date:    2024-10-29                                                     */
-/*  @build:   b250520                                                        */
+/*  @version: 3.1                                                            */
+/*  @date:    2025-11-11                                                     */
+/*  @build:   b251111                                                        */
 /* ------------------------------------------------------------------------- */
 /*                                                                           */
 /* Copyright 1997-2016 Freescale Semiconductor, Inc.                         */

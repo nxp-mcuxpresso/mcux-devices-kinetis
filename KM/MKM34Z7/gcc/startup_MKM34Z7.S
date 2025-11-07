@@ -2,9 +2,9 @@
 /*  @file:    startup_MKM34Z7.s                                              */
 /*  @purpose: CMSIS Cortex-M0P Core Device Startup File                      */
 /*            MKM34Z7                                                        */
-/*  @version: 2.0                                                            */
-/*  @date:    2024-10-29                                                     */
-/*  @build:   b250520                                                        */
+/*  @version: 2.1                                                            */
+/*  @date:    2025-11-11                                                     */
+/*  @build:   b251111                                                        */
 /* ------------------------------------------------------------------------- */
 /*                                                                           */
 /* Copyright 1997-2016 Freescale Semiconductor, Inc.                         */
