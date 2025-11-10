@@ -3,14 +3,14 @@
 **     Processor:           K32L3A60VPJ1A_cm0plus
 **     Compiler:            GNU C Compiler
 **     Reference manual:    K32L3ARM, Rev. 0 , 05/2019
-**     Version:             rev. 1.0, 2019-04-22
-**     Build:               b241115
+**     Version:             rev. 1.1, 2025-11-07
+**     Build:               b251107
 **
 **     Abstract:
 **         Linker file for the GNU C Compiler
 **
 **     Copyright 2016 Freescale Semiconductor, Inc.
-**     Copyright 2016-2024 NXP
+**     Copyright 2016-2025 NXP
 **     SPDX-License-Identifier: BSD-3-Clause
 **
 **     http:                 www.nxp.com

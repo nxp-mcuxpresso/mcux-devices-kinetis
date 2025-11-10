@@ -6,14 +6,14 @@
 **
 **     Compiler:            IAR ANSI C/C++ Compiler for ARM
 **     Reference manual:    K02P64M100SFARM, Rev. 0, February 14, 2014
-**     Version:             rev. 0.5, 2015-02-19
-**     Build:               b241115
+**     Version:             rev. 0.6, 2025-11-07
+**     Build:               b251107
 **
 **     Abstract:
 **         Linker file for the IAR ANSI C/C++ Compiler for ARM
 **
 **     Copyright 2016 Freescale Semiconductor, Inc.
-**     Copyright 2016-2024 NXP
+**     Copyright 2016-2025 NXP
 **     SPDX-License-Identifier: BSD-3-Clause
 **
 **     http:                 www.nxp.com

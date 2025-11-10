@@ -10,13 +10,13 @@
 **     Compiler:            Keil ARM C/C++ Compiler
 **     Reference manual:    MKE02P64M40SF0RM Rev 4
 **     Version:             rev. 1.0, 2017-05-19
-**     Build:               b241119
+**     Build:               b251107
 **
 **     Abstract:
 **         Linker file for the Keil ARM C/C++ Compiler
 **
 **     Copyright 2016 Freescale Semiconductor, Inc.
-**     Copyright 2016-2024 NXP
+**     Copyright 2016-2025 NXP
 **     SPDX-License-Identifier: BSD-3-Clause
 **
 **     http:                 www.nxp.com
@@ -55,7 +55,7 @@ LR_m_text m_text_start m_text_size {   ; load region size_region
 
   RW_m_data m_data_start m_data_size-Stack_Size-Heap_Size { ; RW data
     .ANY (+RW +ZI)
-    * (RamFunction)
+    * (.ramfunc)
     * (NonCacheable.init)
     * (*NonCacheable)
     * (CodeQuickAccess)
