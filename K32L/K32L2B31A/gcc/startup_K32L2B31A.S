@@ -4,11 +4,11 @@
 /*            K32L2B31A                                                      */
 /*  @version: 2.1                                                            */
 /*  @date:    2025-11-10                                                     */
-/*  @build:   b251110                                                        */
+/*  @build:   b260130                                                        */
 /* ------------------------------------------------------------------------- */
 /*                                                                           */
 /* Copyright 1997-2016 Freescale Semiconductor, Inc.                         */
-/* Copyright 2016-2025 NXP                                                   */
+/* Copyright 2016-2026 NXP                                                   */
 /* SPDX-License-Identifier: BSD-3-Clause                                     */
 /*****************************************************************************/
 /* Version: GCC for ARM Embedded Processors                                  */
