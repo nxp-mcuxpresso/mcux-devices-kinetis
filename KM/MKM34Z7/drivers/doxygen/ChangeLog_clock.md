@@ -1,5 +1,10 @@
 # CLOCK
 
+## [2.5.2]
+
+- Bug Fixes
+  - Fixed MSG issues.
+
 ## [2.5.1]
 
 - Bug Fixes
