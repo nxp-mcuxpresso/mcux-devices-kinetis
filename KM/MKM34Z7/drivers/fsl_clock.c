@@ -663,8 +663,7 @@ uint32_t CLOCK_GetFllFreq(void)
     drs   = MCG_C4_DRST_DRS_VAL;
     dmx32 = MCG_C4_DMX32_VAL;
 
-    return freq * fllFactorTable[drs][dmx32];
-    /* PRQA S 4394 */ /* INT30-C: result within uint32_t range for valid MCG frequencies */
+    return freq * fllFactorTable[drs][dmx32]; /* PRQA S 4394 */ /* INT30-C: result within uint32_t range for valid MCG frequencies */
 }
 
 /*!
@@ -735,8 +734,7 @@ uint32_t CLOCK_GetPll0Freq(void)
      */
     assert(mcgpll0clk);
 
-    return mcgpll0clk * PLL_FIXED_MULT;
-    /* PRQA S 4394 */ /* INT30-C: result within uint32_t range for valid MCG frequencies */
+    return mcgpll0clk * PLL_FIXED_MULT; /* PRQA S 4394 */ /* INT30-C: result within uint32_t range for valid MCG frequencies */
 }
 
 /*!
