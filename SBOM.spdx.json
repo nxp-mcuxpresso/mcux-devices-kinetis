@@ -2,20 +2,20 @@
   "SPDXID": "SPDXRef-DOCUMENT",
   "spdxVersion": "SPDX-2.3",
   "creationInfo": {
-    "created": "2025-06-16T06:56:51Z",
+    "created": "2026-11-10T02:26:54Z",
     "creators": [
       "Organization: NXP"
     ],
-    "licenseListVersion": "3.20"
+    "licenseListVersion": "3.28"
   },
-  "name": "mcux-devices-kinetis-v25.06.00",
+  "name": "mcux-devices-kinetis-v26.12.00",
   "dataLicense": "CC0-1.0",
-  "documentNamespace": "https://nxp.com/spdx/e26505b2-f395-46e8-9130-63136ee080ee",
+  "documentNamespace": "https://nxp.com/spdx/d39a1e8f-54e6-4e16-a009-5221056b62f9",
   "packages": [
     {
-      "SPDXID": "SPDXRef-package-e26505b2-f395-46e8-9130-63136ee080ee",
+      "SPDXID": "SPDXRef-package-d39a1e8f-54e6-4e16-a009-5221056b62f9",
       "name": "mcux-devices-kinetis",
-      "versionInfo": "v25.06.00",
+      "versionInfo": "v26.12.00",
       "licenseConcluded": "(BSD-3-Clause)",
       "licenseDeclared": "(BSD-3-Clause)",
       "downloadLocation": "https://github.com/nxp-mcuxpresso/mcux-devices-kinetis",
@@ -29,7 +29,7 @@
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
       "relationshipType": "DESCRIBES",
-      "relatedSpdxElement": "SPDXRef-package-e26505b2-f395-46e8-9130-63136ee080ee"
+      "relatedSpdxElement": "SPDXRef-package-d39a1e8f-54e6-4e16-a009-5221056b62f9"
     }
   ]
 }
